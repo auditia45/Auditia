@@ -374,7 +374,7 @@ textarea{min-height:70px;resize:vertical}
 @keyframes rotate-fab{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 
 /* ── NOUVEAUX STATUTS CHECKLIST ── */
-.cl-item.ecart{background:#f3e5f5}
+.cl-item.ecart{background:#f3e5f5}.cl-item.recommande{background:#e3f2fd;border-left-color:#1565c0}
 .cl-item.nv{background:#f5f5f5}
 .cl-item.deleted{display:none}
 .c-ec{color:#7b1fa2;font-weight:700}
@@ -692,7 +692,7 @@ textarea{min-height:70px;resize:vertical}
     <img src="data:image/jpeg;base64,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" alt="AuditIA">
     <div>
       <div class="htitle">AuditIA Prévention</div>
-      <div class="hsub">Conseiller de Prévention <span style="font-size:.65rem;opacity:.5;font-weight:400;letter-spacing:.5px">v3.2</span></div>
+      <div class="hsub">Conseiller de Prévention <span style="font-size:.65rem;opacity:.5;font-weight:400;letter-spacing:.5px">v3.4</span></div>
     </div>
   </div>
   <div class="hbadge" id="hbadge">0 communes</div>
@@ -743,11 +743,6 @@ textarea{min-height:70px;resize:vertical}
     text-align:left;font-family:'Raleway',sans-serif;font-weight:700;font-size:.84rem;
     color:var(--b1);cursor:pointer;display:flex;align-items:center;gap:8px">
     ✍️ Feuilles d'émargement
-  </button>
-  <button onclick="go('reunions',null);closeMoreMenu()" style="width:100%;padding:12px 16px;border:none;background:none;
-    text-align:left;font-family:'Raleway',sans-serif;font-weight:700;font-size:.84rem;
-    color:var(--b1);cursor:pointer;display:flex;align-items:center;gap:8px">
-    🎙️ Réunions & Comptes rendus
   </button>
   <button onclick="om('m-backup');gdriveToken&&gdriveVerifyToken().then(ok=>ok||showToast('Session expirée—reconnectez Drive.','error',4000));closeMoreMenu()" style="width:100%;padding:12px 16px;border:none;background:none;
     text-align:left;font-family:'Raleway',sans-serif;font-weight:700;font-size:.84rem;
@@ -841,7 +836,10 @@ textarea{min-height:70px;resize:vertical}
       <option value="">— Choisir —</option>
     </select>
     <label>Bâtiment / Local</label>
-    <input id="cl-bat" placeholder="Saisir le bâtiment ou local...">
+    <select id="cl-salle-sel" onchange="onClSalleChange()" style="margin-bottom:5px">
+      <option value="">— Sélectionner un local enregistré —</option>
+    </select>
+    <input id="cl-bat" placeholder="Ou saisir librement le bâtiment / local...">
     <div class="r2">
       <div><label>Date</label><input id="cl-date" type="date"></div>
       <div><label>Année construction</label><input id="cl-annee" type="number" placeholder="1985"></div>
@@ -856,6 +854,7 @@ textarea{min-height:70px;resize:vertical}
       <option value="tech">Atelier / Technique</option>
       <option value="autre">Autre</option>
       <option value="vehicule">🚗 Véhicule</option>
+      <option value="acfi">🔍 Référentiel ACFI complet (CDG45)</option>
     </select>
   </div>
   <!-- Agents présents — section supprimée, RPS géré dans section RH -->
@@ -1813,8 +1812,7 @@ function go(page, btn) {
     rh: renderRH,
     check: initCheckPage,
     rapports: () => { g('rapport-btns').style.display='none'; showRapportsList(); },
-    emargement: () => { emg_renderSessions(); },
-    reunions: () => { reu_renderSessions(); }
+    emargement: () => { emg_renderSessions(); }
   };
   // Show chat FAB on all pages
   const fab = g('chat-fab');
@@ -2503,29 +2501,10 @@ function deleteConv(id) {
 // ═══════════════════════════════════════════
 let dvLines = [];
 
-window.dv_editConvHeures = function(cvId) {
-  const cv = convs.find(c => c.id === cvId);
-  if (!cv) return;
-  const h = prompt('Heures prévues pour ' + cv.commune + ' :', cv.heures || '');
-  if (h === null) return;
-  const val = parseFloat(h);
-  if (isNaN(val) || val <= 0) { showToast('Valeur invalide', 'error'); return; }
-  cv.heures = val;
-  sv(CK.CV, convs);
-  showToast('✅ ' + val + ' h définies pour ' + cv.commune, 'success');
-  const el = document.getElementById('dv-conv-info');
-  if (el) el.innerHTML = '🤝 Convention : ' + cv.commune + ' — <strong>' + val + ' h prévues</strong>';
-};
-
 function openDevisModal(convId, dvId = null) {
   const cv = convs.find(c => c.id === convId);
   g('dv-conv-id').value = convId;
-  g('dv-conv-info').innerHTML = cv
-    ? `🤝 Convention : ${cv.commune} — ${cv.heures
-        ? `<strong>${cv.heures} h prévues</strong>`
-        : `<span style="color:#c62828">heures non définies</span>
-           <button onclick="dv_editConvHeures('${cv.id}')" style="margin-left:8px;background:#c62828;color:#fff;border:none;border-radius:6px;padding:2px 9px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:'Raleway',sans-serif">✏️ Définir</button>`}`
-    : '';
+  g('dv-conv-info').textContent = cv ? `🤝 Convention : ${cv.commune} — ${cv.heures ? cv.heures + ' h prévues' : 'heures non définies'}` : '';
 
   if (dvId) {
     const dv = devis.find(d => d.id === dvId);
@@ -3815,6 +3794,269 @@ const CL_JEUNE = [
   ]},
 ];
 
+// ═══════════════════════════════════════════════════════════
+// CHECKLIST V2 — RÉFÉRENTIEL ACFI COMPLET (Annexes 1 & 2)
+// ═══════════════════════════════════════════════════════════
+const CL_BASE_V2 = [
+
+  // ── ANNEXE 1 : ORGANISATION GÉNÉRALE ──────────────────────
+
+  { id:'v2_docs', ico:'📋', titre:'Documents obligatoires', items:[
+    {l:'Registre Santé et Sécurité au Travail (RSST) présent et accessible aux agents — Art. 3-1 décret 85-603'},
+    {l:'Registre de sécurité présent, renseigné (vérifications périodiques, exercices, incidents)'},
+    {l:'DUERP réalisé, à jour et accessible aux agents — Art. L4121-3 CdT'},
+    {l:'Procédure d\'accès au DUERP connue des agents et formalisée'},
+    {l:'Consignes de sécurité incendie affichées — Art. R4227-37 et 38 CdT'},
+    {l:'Document relatif à la Protection contre les Explosions (DRPE) rédigé si zone ATEX — Art. R4227-52'},
+    {l:'Fiches de Données de Sécurité disponibles et connues pour tous produits chimiques — Art. R4411-73'},
+    {l:'Consignes de sécurité au poste intégrant le risque chimique — Art. R4412-39'},
+    {l:'Consignes de sécurité au poste intégrant le risque biologique — Art. R4424-4'},
+    {l:'Titre d\'habilitation électrique présent et à jour — Art. R4544-10'},
+    {l:'DTA (Dossier Technique Amiante) et fiche récapitulative si construction avant 1997 — Art. R1334-29-5'},
+    {l:'PAPRIPACT établi et diffusé — programme annuel de prévention'},
+    {l:'Affichage obligatoire présent : numéros d\'urgence, médecin de prévention — Art. D4711-1'},
+  ]},
+
+  { id:'v2_formations', ico:'🎓', titre:'Formations obligatoires', items:[
+    {l:'Formation accueil sécurité dispensée à tous les agents (procédures, DUERP, SST, incendie, point rassemblement) — Art. 6 et 7 décret 85-603'},
+    {l:'Formation SST (Sauveteur Secouriste du Travail) ou PSC1 — recyclage SST < 2 ans — Art. R4224-15'},
+    {l:'Formation maniement extincteurs dispensée à tous les agents — Art. R4227-39'},
+    {l:'Formation prévention risques électriques (habilitation B0/BE) — Art. R4544-10'},
+    {l:'Formation agents exposés aux produits chimiques dangereux et CMR — Art. R4412-38'},
+    {l:'Formation agents exposés à des micro-organismes pathogènes — Art. R4425-6'},
+    {l:'Formation manutention manuelle / gestes et postures — Art. R4541-8'},
+    {l:'Formation et information à l\'utilisation et port des EPI — Art. R4323-104'},
+    {l:'Formation FIMO/FCO si agents conducteurs (transport routier) — Art. R3314-1'},
+  ]},
+
+  { id:'v2_controles', ico:'🔍', titre:'Contrôles & Vérifications obligatoires', items:[
+    {l:'Vérification annuelle des extincteurs par organisme agréé (inspection trimestrielle interne) — Art. R4224-17'},
+    {l:'Vérification annuelle des installations électriques (ou report à 2 ans sous conditions) — Art. R4226-14'},
+    {l:'Vérification semestrielle des portes et portails automatiques — Art. R4224-12'},
+    {l:'Vérification annuelle des appareils électriques mobiles et semi-mobiles (cafetières, outillage électroportatif…)'},
+    {l:'Vérification des équipements de levage selon périodicité réglementaire — Arrêté 1er mars 2004'},
+    {l:'Vérification et requalification des appareils à pression (cuves, compresseurs) — Arrêté 20 nov. 2017'},
+    {l:'Évaluation exposition au bruit si nécessaire (mesure tous les 5 ans) — Art. R4433-1'},
+    {l:'Entretien et vérification annuelle des installations de ventilation — Arrêté 08/10/87'},
+  ]},
+
+  { id:'v2_epi', ico:'🦺', titre:'EPI — Équipements de Protection Individuelle', items:[
+    {l:'Vêtements de travail et EPI adaptés mis à disposition à usage individuel — Art. R4323-91'},
+    {l:'EPI entretenus et renouvelés gratuitement par l\'autorité territoriale — Art. R4323-95'},
+    {l:'Port effectif des EPI vérifié par l\'encadrement — Art. R4321-4'},
+    {l:'Consignes de sécurité au poste intégrant les EPI à utiliser — Art. R4323-105'},
+    {l:'EPI stockés proprement, accessibles, en bon état'},
+  ]},
+
+  // ── ANNEXE 2 : RISQUES ────────────────────────────────────
+
+  { id:'v2_rps', ico:'🧠', titre:'Risques Psychosociaux (RPS)', items:[
+    {l:'Évaluation des risques psychosociaux réalisée et intégrée au DUERP — Accord-cadre 22 oct. 2013'},
+    {l:'Mesures de lutte contre les RPS mises en place (charge de travail, violences, QVT…) — Art. L1152-4'},
+    {l:'Dispositif de signalement du harcèlement moral/sexuel accessible aux agents — Art. 6 bis Loi 83-634'},
+    {l:'Registre de droit d\'alerte en santé publique et environnement présent'},
+  ]},
+
+  { id:'v2_addiction', ico:'🚭', titre:'Conduites addictives', items:[
+    {l:'Absence d\'alcool fort dans les locaux et de consommation d\'alcool sur les lieux de travail — Art. R4228-20'},
+    {l:'Interdiction de fumer et de vapoter respectée — Art. R3511-1 et D3513-2 Code Santé'},
+    {l:'Affichage de l\'interdiction de fumer conforme — Art. R3511-6 Code Santé'},
+  ]},
+
+  { id:'v2_secours', ico:'🩺', titre:'Secours & Premiers secours', items:[
+    {l:'Matériels de premiers secours présents dans les locaux et véhicules (trousse, DAE) — Art. R4224-14'},
+    {l:'DAE présent, signalisé, vérifié (batterie, électrodes, date péremption)'},
+    {l:'Signalisation et accessibilité des matériels de secours — Art. R4224-23'},
+    {l:'Numéros d\'urgence affichés (15, 17, 18, 112, médecin prévention)'},
+    {l:'Mesures pour assurer les premiers secours définies (après avis médecin prévention) — Art. R4224-16'},
+    {l:'Formation SST à jour (< 2 ans) — nombre suffisant au regard des effectifs — Art. R4224-15'},
+    {l:'Protocole d\'alerte en cas d\'accident documenté et connu des agents'},
+  ]},
+
+  { id:'v2_incendie', ico:'🔥', titre:'Risque incendie', items:[
+    {l:'Extincteurs en nombre suffisant, adaptés aux risques, accessibles et signalisés — Art. R4227-29'},
+    {l:'Extincteurs vérifiés annuellement (étiquette < 1 an) et inspectés trimestriellement — Art. R4224-17'},
+    {l:'Extincteurs accrochés à hauteur max. 1 m 20, signalisés durablement — Art. MS39 Arrêté 25/06/80'},
+    {l:'Issues de secours dégagées, balisées, non verrouillées — Art. R4227-4 à 7'},
+    {l:'Plans d\'évacuation affichés et à jour — point de rassemblement signalisé'},
+    {l:'Exercice d\'évacuation réalisé < 1 an et tracé — Art. R4227-39'},
+    {l:'Alarme sonore audible en tout point du bâtiment — Art. R4227-34 à 36'},
+    {l:'BAES (éclairage de sécurité) fonctionnel — tests mensuel et semestriel'},
+    {l:'Portes coupe-feu en bon état, fermeture automatique opérationnelle'},
+    {l:'Dégagements d\'évacuation conformes (largeur ≥ 0,90 m, non encombrés) — Art. R4216-5'},
+    {l:'Chauffage : dispositif d\'arrêt d\'urgence installé, accessible et signalisé — Art. R4227-20'},
+    {l:'Stockage de matières inflammables : local ventilé, interdiction de fumer affichée — Art. R4227-22 à 25'},
+    {l:'SSI (système de détection/alarme) vérifié par organisme agréé (rapport < 1 an)'},
+  ]},
+
+  { id:'v2_explosion', ico:'💥', titre:'Risque explosion / ATEX', items:[
+    {l:'DRPE (Document Protection Explosions) établi si stockage gaz/liquides inflammables — Art. R4227-52'},
+    {l:'Bouteilles de gaz sous pression stockées dans local grillagé, fermé, signalisé, à l\'abri du soleil'},
+    {l:'Zonage des zones à risque d\'explosion réalisé et signalisé — Art. R4227-50 et 51'},
+    {l:'Matériels électriques certifiés ATEX dans les zones classées — Art. R4215-12'},
+    {l:'Sources d\'ignition maîtrisées (interdiction de fumer, outils anti-étincelles)'},
+    {l:'Rétention sous produits inflammables liquides conforme — Art. R4412-17'},
+  ]},
+
+  { id:'v2_chimique', ico:'⚗️', titre:'Risque chimique', items:[
+    {l:'Fiches de Données de Sécurité (FDS) disponibles et connues pour tous les produits — Art. R4411-73'},
+    {l:'Étiquetage CLP (pictogrammes SGH) conforme sur tous les contenants — Art. R4412-39-1'},
+    {l:'Produits chimiques rangés dans armoire/local fermé à clé, avec signalétique réglementaire'},
+    {l:'Produits incompatibles séparés, bacs de rétention présents — Art. R4412-17'},
+    {l:'Évaluation du risque chimique intégrée au DUERP (ACD et CMR) — Art. R4412-5'},
+    {l:'Consignes de sécurité chimique affichées aux postes — Art. R4412-39'},
+    {l:'EPI adaptés aux produits chimiques présents (gants, lunettes, masques)'},
+    {l:'Douche de sécurité / rince-œil à proximité si produits corrosifs ou irritants'},
+    {l:'Mesures d\'hygiène en zones chimiques (interdiction de manger, se laver les mains) — Art. R4412-20'},
+    {l:'Gestion déchets chimiques conforme (collecte, traçabilité, filière agréée)'},
+  ]},
+
+  { id:'v2_biologique', ico:'🦠', titre:'Risque biologique', items:[
+    {l:'Évaluation du risque biologique réalisée (agents biologiques, groupes 1 à 4) — Art. R4423-1'},
+    {l:'Consignes de sécurité au poste intégrant le risque biologique affichées — Art. R4424-4'},
+    {l:'Mesures de prévention en place (EPI, procédures, élimination déchets) — Art. R4422-1'},
+    {l:'Formation des agents exposés à des micro-organismes pathogènes — Art. R4425-6'},
+    {l:'Suivi individuel renforcé (groupes 3 et 4) à jour (< 2 ans) — Art. R4426-7'},
+    {l:'Contrôle légionelles (tour aéroréfrigérante, réseau eau chaude) à jour'},
+  ]},
+
+  { id:'v2_lieux', ico:'🏗️', titre:'Lieux de travail', items:[
+    {l:'Structure et solidité des bâtiments appropriées — Art. R4224-2'},
+    {l:'Sols intérieurs plats, non glissants, sans dénivellation dangereuse — Art. R4214-3'},
+    {l:'Escaliers munis de garde-corps et mains courantes — Art. R4227-10'},
+    {l:'Entretien et nettoyage des locaux effectué (exempts d\'encombrement) — Art. R4224-18'},
+    {l:'Vestiaires séparés, propres, armoires individuelles, siège — Art. R4228-2 à 6'},
+    {l:'Lavabos : eau potable, température réglable, moyens d\'hygiène — Art. R4228-7'},
+    {l:'Douches disponibles pour travaux salissants/insalubres, propres — Art. R4228-8 et 9'},
+    {l:'Cabinets d\'aisance non communicants, sans odeur, chasse d\'eau, papier — Art. R4228-10 à 14'},
+    {l:'Eau potable disponible et entretenue — Art. R4225-2'},
+    {l:'Siège approprié mis à disposition de chaque travailleur — Art. R4225-5'},
+    {l:'Dispositif de sécurité sur les portes/portails automatiques — Art. R4214-8'},
+    {l:'Fenêtres, toitures vitrées : ouverture sans danger — Art. R4214-5'},
+    {l:'Réfrigérateur/micro-ondes : vérification périodique des appareils personnels récupérés'},
+  ]},
+
+  { id:'v2_isolement', ico:'👷', titre:'Travail isolé', items:[
+    {l:'Repérage des situations de travail isolé réalisé — Recommandation CARSAT R416'},
+    {l:'Évaluation et réduction du risque lié au travail isolé'},
+    {l:'Moyen de communication ou dispositif PTW/DATI (Détecteur d\'Alerte Travailleur Isolé) mis en place'},
+    {l:'Procédure organisationnelle d\'appel de contrôle définie et connue des agents'},
+  ]},
+
+  { id:'v2_hauteur', ico:'🪜', titre:'Risque chute de hauteur', items:[
+    {l:'Signalisation et interdiction d\'accès des zones de risque de chute — Art. R4224-20'},
+    {l:'Protections collectives contre chutes de hauteur en place (garde-corps, filets) — Art. R4323-59'},
+    {l:'Conditions d\'accès et de circulation en hauteur sécurisées — Art. R4323-65 à 68'},
+    {l:'Échelles, escabeaux et marchepieds en bon état, utilisés conformément — Art. R4323-81 à 88'},
+    {l:'Protection des puits, trappes et ouvertures dans les planchers — Art. R4224-5'},
+    {l:'Échafaudages : conception, stabilité, notice de montage conformes — Art. R4323-70 à 77'},
+  ]},
+
+  { id:'v2_manutention', ico:'📦', titre:'Manutention manuelle', items:[
+    {l:'Évaluation du risque de manutention manuelle réalisée — Art. R4541-5'},
+    {l:'Aides mécaniques disponibles (diable, transpalette, chariot) — Art. R4541-3'},
+    {l:'Mesures organisationnelles réduisant la manutention manuelle — Art. R4541-4'},
+    {l:'Restriction sur les charges maximales respectée — Art. R4541-9'},
+    {l:'Formation gestes et postures dispensée aux agents exposés — Art. R4541-8'},
+  ]},
+
+  { id:'v2_electrique', ico:'⚡', titre:'Risque électrique', items:[
+    {l:'Titre d\'habilitation électrique présent et à jour pour les agents concernés — Art. R4544-10'},
+    {l:'Accès aux installations électriques réservé au personnel habilité — Art. R4544-6'},
+    {l:'Tableau électrique fermé à clé ou verrouillé, signalisé (pictogramme éclair) — Art. R4226-9'},
+    {l:'Plastrons (caches-bornes) présents sur coffrets électriques'},
+    {l:'Vérification annuelle des installations électriques par organisme agréé — Art. R4226-14'},
+    {l:'Câbles, prises et interrupteurs en bon état (pas de détérioration visible)'},
+    {l:'Protections différentielles 30 mA en zones humides'},
+    {l:'Appareils électriques mobiles vérifiés périodiquement (y compris appareils récupérés)'},
+    {l:'Formation à la prévention du risque électrique dispensée — Art. R4544-10'},
+  ]},
+
+  { id:'v2_ambiances', ico:'🌡️', titre:'Ambiances de travail', items:[
+    {l:'Locaux chauffés à température convenable en saison froide (min. 18°C) — Art. R4223-13'},
+    {l:'Ventilation mécanique ou naturelle permanente assurée — Art. R4222-4'},
+    {l:'VMC entretenue annuellement (nettoyage gaines, filtres) — Arrêté 08/10/87'},
+    {l:'Absence d\'odeurs désagréables ou de remontées d\'égouts — Art. R4222-18'},
+    {l:'Éclairage adapté aux postes de travail (≥ 300 lux bureaux) — Art. R4223-2'},
+    {l:'Protection contre rayonnement solaire et éblouissements — Art. R4223-7'},
+    {l:'Évaluation exposition au bruit réalisée — Art. R4433-1'},
+    {l:'Détecteur CO présent et fonctionnel (chauffage gaz/fioul) — Art. R4222-1'},
+    {l:'Absence de moisissures visibles sur les parois'},
+  ]},
+
+  { id:'v2_confines', ico:'🕳️', titre:'Espaces confinés', items:[
+    {l:'Identification des espaces confinés sur le site réalisée — Recommandation CNAMTS R447'},
+    {l:'Autorisation et permis de pénétrer formalisés avant toute intervention — Rec. R447'},
+    {l:'Procédure d\'intervention définie (organisation, consignes, EPI, plan sauvetage) — Rec. R447'},
+    {l:'Vérification de l\'absence d\'atmosphère dangereuse avant pénétration — Art. R4222-23'},
+    {l:'Personnel intervenant formé (CATEC si eau potable/assainissement) — Rec. R472'},
+    {l:'Exercices de sécurité (sauvetage) réalisés périodiquement'},
+  ]},
+
+  { id:'v2_equipements', ico:'🔧', titre:'Équipements de travail', items:[
+    {l:'Présence du marquage CE ou mise en conformité des équipements avant 1993 — Art. R4313-3'},
+    {l:'Utilisation des équipements conforme et préservant la santé des agents — Art. L4321-1'},
+    {l:'Maintenance des équipements assurée, carnet de maintenance tenu — Art. R4323-19'},
+    {l:'Espace de circulation suffisant autour des équipements (min. 80 cm) — Art. R4323-8'},
+    {l:'Barrières/portails automatiques vérifiés semestriellement — Art. R4224-12'},
+    {l:'Équipements de levage : charge maximale indiquée, accessoires marqués — Art. R4324-25'},
+    {l:'Autorisation de conduite présente et à jour pour engins — Art. R4323-56'},
+    {l:'Compresseurs/cuves sous pression : requalification périodique à jour — Arrêté 20/11/17'},
+  ]},
+
+  { id:'v2_vibrations', ico:'📳', titre:'Risque vibrations', items:[
+    {l:'Évaluation du risque lié aux vibrations réalisée (engins, outils vibrants) — Art. R4444-1'},
+    {l:'Mesures de réduction d\'exposition aux vibrations mises en œuvre si nécessaire — Art. R4445-1'},
+    {l:'Formation et information des agents exposés au risque vibrations — Art. R4447-1'},
+  ]},
+
+  { id:'v2_circulation', ico:'🚗', titre:'Déplacements & Circulation', items:[
+    {l:'Voies de circulation conçues pour piétons et véhicules sans danger mutuel — Art. R4214-9'},
+    {l:'Marquage au sol des voies de circulation réalisé — Art. R4214-11'},
+    {l:'Signalisation des zones de danger (collision, angle mort) — Art. R4214-14'},
+    {l:'Protocole de sécurité pour chargement/déchargement établi — Art. R4515-4'},
+    {l:'Gilet haute-visibilité et triangle présents dans chaque véhicule — Art. R416-19 Code Route'},
+    {l:'FIMO/FCO à jour pour conducteurs de poids lourds — Art. R3314-1'},
+    {l:'Signalisation véhicules d\'intervention (bandes réfléchissantes, gyrophare si chantier mobile)'},
+  ]},
+
+  { id:'v2_ecran', ico:'💻', titre:'Travail sur écran', items:[
+    {l:'Évaluation des risques liés aux écrans de visualisation — Art. R4542-3'},
+    {l:'Postes de travail sur écran conformes (écran réglable, clavier, souris, chaise)'},
+    {l:'Éclairage postes bureau suffisant, sans reflets (≥ 300 lux) — Art. R4223-2'},
+    {l:'Pauses ou changements d\'activité organisés sur postes contraignants — Art. R4542-4'},
+    {l:'Visiotest réalisé lors de la visite médicale — Art. R4542-17'},
+  ]},
+
+  { id:'v2_coactivite', ico:'🤝', titre:'Co-activité & Entreprises extérieures', items:[
+    {l:'Plan de prévention établi pour toute intervention d\'entreprise extérieure (> 400 h/an ou travaux dangereux) — Art. R4512-7'},
+    {l:'Inspection commune préalable réalisée avec les entreprises extérieures — Art. R4512-2'},
+    {l:'Protocole de sécurité pour opérations de chargement/déchargement — Art. R4515-4'},
+    {l:'PGCSPS/PPSPS pour chantiers faisant intervenir plusieurs entreprises — Art. R4532-12'},
+    {l:'Audit de chantier (vérification application du plan de prévention) — Art. R4513-1'},
+  ]},
+
+  { id:'v2_amiante', ico:'⚠️', titre:'Amiante', items:[
+    {l:'DTA (Dossier Technique Amiante) présent si bâtiment construit avant 1997 — Art. R1334-29-5'},
+    {l:'Repérage amiante avant travaux réalisé — Art. R4412-97'},
+    {l:'État de conservation des matériaux amiantés vérifié tous les 3 ans (liste A) — Art. R1334-15'},
+    {l:'Évaluation des risques d\'exposition à l\'amiante («Scol@miante») réalisée — Art. R4412-98'},
+    {l:'Agents exposés à l\'amiante formés (sous-section 4) — Art. R4412-117'},
+    {l:'Mode opératoire pour intervention sur matériaux amiantés disponible — Art. R4412-145'},
+  ]},
+
+  { id:'v2_pmr', ico:'♿', titre:'Accessibilité PMR', items:[
+    {l:'Cheminement extérieur accessible (pas d\'obstacle, largeur ≥ 1,40 m)'},
+    {l:'Entrée accessible (rampe ou plain-pied, largeur ≥ 0,90 m)'},
+    {l:'Ascenseur, plan incliné ou aménagement si étages (normes ERP)'},
+    {l:'Toilettes PMR présentes et accessibles'},
+    {l:'Accessibilité pour travailleurs handicapés : locaux, postes, cabinets d\'aisance — Art. R4214-26'},
+    {l:'Registre d\'accessibilité tenu et disponible'},
+    {l:'Procédure d\'évacuation des personnes à mobilité réduite (EVASAN) définie'},
+  ]},
+
+];
+
 // ═══════════════════════════════════════════
 // CHECKLIST PAGE
 // ═══════════════════════════════════════════
@@ -3921,15 +4163,18 @@ function onClSalleChange() {
   if (!sel || !sel.value) return;
   const salle = salles.find(s => s.id === sel.value);
   if (!salle) return;
-  // Pre-fill bâtiment with salle info
+  // Lier la salle au bâtiment
   const batInput = g('cl-bat');
   if (batInput) {
     batInput.value = salle.batiment
-      ? salle.batiment + ' — ' + salle.nom
+      ? salle.batiment + (salle.nom !== salle.batiment ? ' — ' + salle.nom : '')
       : salle.nom;
   }
-  // Pre-fill annee if known
+  // Stocker l'ID de la salle pour liaison
+  window._clCurrentSalleId = salle.id;
+  // Pre-fill annee
   if (salle.annee && g('cl-annee')) g('cl-annee').value = salle.annee;
+  showToast('📍 Bâtiment lié : ' + (salle.batiment || salle.nom), 'success', 2000);
 }
 
 function onClTypeChange() {
@@ -3993,7 +4238,7 @@ function clItemHtml(secId, i, it) {
     ? `<img class="cl-photo-thumb" src="${e.photo}" alt="Photo" onclick="openLightbox('${pid}')">
        <span class="cl-photo-del" onclick="deleteClPhoto('${pid}')">🗑️ Supprimer la photo</span>`
     : '';
-  const itemCls = e.s === 'C' ? 'ok' : e.s === 'NC' ? 'nok' : e.s === 'NA' ? 'na' : e.s === 'EC' ? 'ecart' : e.s === 'NV' ? 'nv' : '';
+  const itemCls = e.s === 'C' ? 'ok' : e.s === 'NC' ? 'nok' : e.s === 'NA' ? 'na' : e.s === 'EC' ? 'ecart' : e.s === 'NV' ? 'nv' : e.s === 'R' ? 'recommande' : '';
   return `<div class="cl-item ${itemCls}" id="cli-${pid}">
     <div class="cl-itop">
       <div class="cl-ilab">${esc(it.l)}</div>
@@ -4004,6 +4249,7 @@ function clItemHtml(secId, i, it) {
             <option value="C"  ${e.s === 'C'  ? 'selected' : ''}>✅ Conforme</option>
             <option value="EC" ${e.s === 'EC' ? 'selected' : ''}>⚠️ Écart</option>
             <option value="NC" ${e.s === 'NC' ? 'selected' : ''}>❌ Non conforme</option>
+            <option value="R"  ${e.s === 'R'  ? 'selected' : ''}>💡 Recommandé</option>
             <option value="NV" ${e.s === 'NV' ? 'selected' : ''}>🔲 Non vérifié</option>
             <option value="NA" ${e.s === 'NA' ? 'selected' : ''}>➖ N/A</option>
           </select>
@@ -4019,6 +4265,17 @@ function clItemHtml(secId, i, it) {
   </div>`;
 }
 
+function clAddCustomItem(secId) {
+  const txt = prompt('Intitulé du point à ajouter dans cette section :');
+  if (!txt || !txt.trim()) return;
+  if (!clEtat.__addedItems) clEtat.__addedItems = {};
+  if (!clEtat.__addedItems[secId]) clEtat.__addedItems[secId] = [];
+  clEtat.__addedItems[secId].push(txt.trim());
+  autoSaveCL();
+  buildCLSections();
+  showToast('Point ajouté dans la section', 'success');
+}
+
 function setClS(pid, val) {
   if (!clEtat[pid]) clEtat[pid] = { s: '', obs: '' };
   clEtat[pid].s = val;
@@ -4026,7 +4283,7 @@ function setClS(pid, val) {
   if (el) {
     el.className = 'cl-item ' +
       (val === 'C' ? 'ok' : val === 'NC' ? 'nok' : val === 'NA' ? 'na' :
-       val === 'EC' ? 'ecart' : val === 'NV' ? 'nv' : '');
+       val === 'EC' ? 'ecart' : val === 'NV' ? 'nv' : val === 'R' ? 'recommande' : '');
     el.classList.add('cl-flash');
     setTimeout(() => el.classList.remove('cl-flash'), 600);
   }
@@ -4101,11 +4358,27 @@ function toggleClSec(id) {
   if (b) b.style.display = b.style.display === 'none' ? '' : 'none';
 }
 
+window.clAddItemInSection = function(secId) {
+  const txt = prompt('Point de contrôle à ajouter :');
+  if (!txt || !txt.trim()) return;
+  if (!clEtat.__addedItems) clEtat.__addedItems = {};
+  if (!clEtat.__addedItems[secId]) clEtat.__addedItems[secId] = [];
+  clEtat.__addedItems[secId].push(txt.trim());
+  autoSaveCL();
+  buildCLSections();
+  // Ouvrir la section si fermée
+  const body = document.getElementById('clbd-' + secId);
+  if (body && body.style.display === 'none') toggleClSec(secId);
+  showToast('✅ Point ajouté', 'success');
+};
+
 function majClBadge(secId) {
-  const keys = Object.keys(clEtat).filter(k => k.startsWith(secId + '_') && !clEtat[k].deleted);
-  const done = keys.filter(k => clEtat[k].s !== '').length;
+  const baseKeys = Object.keys(clEtat).filter(k => k.startsWith(secId + '_') && !k.includes('custom') && !clEtat[k].deleted);
+  const custKeys = Object.keys(clEtat).filter(k => k.startsWith(secId + '_custom_') && !clEtat[k].deleted);
+  const allKeys = [...baseKeys, ...custKeys];
+  const done = allKeys.filter(k => clEtat[k].s !== '').length;
   const b = g('clb-' + secId);
-  if (b) b.textContent = done + '/' + keys.length;
+  if (b) b.textContent = done + '/' + allKeys.length;
 }
 
 function majClProg() {
@@ -4309,6 +4582,7 @@ function saveCL() {
   });
   const snapshot = {
     id: uid(), convId, bat, missId,
+    salleId: window._clCurrentSalleId || '',
     commune: convs.find(c => c.id === convId)?.commune || '',
     date: g('cl-date').value,
     annee: g('cl-annee').value,
@@ -4393,7 +4667,9 @@ function openChecklist(clId) {
     sel.value = cl.convId || '';
   }
   if (g('cl-bat')) g('cl-bat').value = cl.bat || '';
+  window._clCurrentSalleId = cl.salleId || '';
   if (cl.convId) populateClSalles(cl.convId);
+  if (cl.salleId && g('cl-salle-sel')) g('cl-salle-sel').value = cl.salleId;
   window._clSkipAutosave = true;
   // Charger photos seulement si la checklist a déjà des données
   if (Object.keys(cl.etat||{}).length > 0) {
@@ -4580,7 +4856,7 @@ window.clRestoreSaved = function() {
 };
 function buildCLSections() {
   const type = g('cl-type').value;
-  let secs = type === 'vehicule' ? [...CL_VEHICULE] : [...CL_BASE];
+  let secs = type === 'vehicule' ? [...CL_VEHICULE] : type === 'acfi' ? [...CL_BASE_V2] : [...CL_BASE];
   if (type === 'ecole') secs = [...secs, ...CL_JEUNE];
 
   // Ajouter les sections personnalisées sauvegardées
@@ -4598,21 +4874,35 @@ function buildCLSections() {
       const pid = sec.id + '_' + i;
       if (!clEtat[pid]) clEtat[pid] = { s: '', obs: '' };
     });
+    // Items personnalisés ajoutés par l'utilisateur dans cette section
+    const addedItems = (clEtat.__addedItems && clEtat.__addedItems[sec.id]) || [];
+    const addedOffset = sec.items.length;
+    addedItems.forEach((txt, j) => {
+      const pid = sec.id + '_custom_' + j;
+      if (!clEtat[pid]) clEtat[pid] = { s: '', obs: '' };
+    });
+
     const wrap = document.createElement('div');
     wrap.className = 'cl-sec';
     wrap.id = 'cls-' + sec.id;
     const sid = sec.id;
     const isCustom = customSecs.some(cs => cs.id === sid);
+    const totalItems = sec.items.length + addedItems.length;
     wrap.innerHTML =
       '<div style="display:flex;align-items:stretch">' +
         '<div class="cl-shead" style="flex:1" onclick="toggleClSec(\'' + sid + '\')">' +
           '<span>' + sec.ico + ' ' + sec.titre + '</span>' +
-          '<span class="cl-sbadge" id="clb-' + sid + '">0/' + sec.items.length + '</span>' +
+          '<span class="cl-sbadge" id="clb-' + sid + '">0/' + totalItems + '</span>' +
         '</div>' +
         '<button class="cl-sdel" onclick="deleteClSection(\'' + sid + '\')" title="Supprimer cette section">✕</button>' +
       '</div>' +
       '<div class="cl-sbody" id="clbd-' + sid + '">' +
-      sec.items.map((it, i) => clItemHtml(sid, i, it)).join('') + '</div>';
+        sec.items.map((it, i) => clItemHtml(sid, i, it)).join('') +
+        addedItems.map((txt, j) => clItemHtml(sid, 'custom_' + j, { l: txt })).join('') +
+        '<div class="no-print" style="padding:4px 8px 8px">' +
+          '<button onclick="clAddItemInSection(\'' + sid + '\')" style="background:none;border:1.5px dashed var(--b3);border-radius:7px;color:var(--b2);font-family:Raleway,sans-serif;font-weight:700;font-size:.72rem;padding:4px 10px;cursor:pointer;width:100%;text-align:left">+ Ajouter un point dans cette section</button>' +
+        '</div>' +
+      '</div>';
     container.appendChild(wrap);
     majClBadge(sec.id);
   });
@@ -5490,7 +5780,7 @@ function buildInvoiceDoc(type) {
   const totalH = dvLines.reduce((s, l) => s + num(l.hEst), 0);
   const totalEur = totalH * RATE;
   const isFacture = type === 'facture';
-  const typeLabels = { visite: 'Visite batiment', conseil: 'Conseil / Reunion', formation: 'Formation', redaction: 'Redaction de documents' };
+  const typeLabels = { visite: 'Visite batiment', conseil: 'Conseil / Reunion', formation: 'Formation', redaction: 'Redaction de documents', admin: 'Administratif/Mairie', ecole: 'Ecole/Jeune public', sport: 'Equipement sportif', culture: 'Equipement culturel', tech: 'Atelier/Technique', autre: 'Autre', vehicule: 'Vehicule', acfi: 'Referentiel ACFI complet CDG45' };
   // Numéro séquentiel stocké
   const cntKey = isFacture ? 'auditia_fact_count' : 'auditia_devis_count';
   const cnt = (parseInt(localStorage.getItem(cntKey) || '0') + 1);
@@ -5802,7 +6092,7 @@ function buildChecklistSummary() {
   const cv = convs.find(c => c.id === convId);
   const typeLabels = { admin: 'Administratif', ecole: 'Ecole / Accueil jeune public', sport: 'Sportif', culture: 'Culturel', tech: 'Atelier / Technique', autre: 'Autre' };
 
-  let allSec = typeERP === 'vehicule' ? [...CL_VEHICULE] : [...CL_BASE];
+  let allSec = typeERP === 'vehicule' ? [...CL_VEHICULE] : typeERP === 'acfi' ? [...CL_BASE_V2] : [...CL_BASE];
   if (typeERP === 'ecole') allSec = [...allSec, ...CL_JEUNE];
   const _bcsCustom = (clEtat.__customSections || []);
   const _bcsDel = (clEtat.__deletedSections || []);
@@ -5818,6 +6108,7 @@ function buildChecklistSummary() {
     sec.items.forEach((it, i) => {
       const e = clEtat[sec.id + '_' + i] || { s: '', obs: '' };
       if (e.s === 'C') { tOk++; tTot++; secOk++; }
+      else if (e.s === 'R') { tTot++; } // Recommandé : compte mais pas comme NC
       else if (e.s === 'NC') {
         tNc++; tTot++; secNc++;
         ncItems.push({ section: sec.titre, point: it.l, obs: e.obs || '', photo: !!e.photo, statut: 'Non conforme' });
@@ -5825,6 +6116,9 @@ function buildChecklistSummary() {
       else if (e.s === 'EC') {
         tEc++; tTot++; secNc++;
         ncItems.push({ section: sec.titre, point: it.l, obs: e.obs || '', photo: !!e.photo, statut: 'Écart' });
+      } else if (e.s === 'R') {
+        tTot++;
+        ncItems.push({ section: sec.titre, point: it.l, obs: e.obs || '', photo: !!e.photo, statut: 'Recommandé' });
       } else if (e.s === 'NA') {
         // skip
       } else if ((e.obs || '').trim()) {
@@ -5875,10 +6169,11 @@ function buildChecklistSummary() {
 
   const _nc = ncItems.filter(n => n.statut === 'Non conforme');
   const _ec = ncItems.filter(n => n.statut === 'Écart');
+  const _rr = ncItems.filter(n => n.statut === 'Recommandé');
   const ncText = ncItems.length
-    ? '\n\nNON-CONFORMITÉS (' + _nc.length + ') ET ÉCARTS (' + _ec.length + ') :\n'
+    ? '\n\nCONSTATS DE VISITE (' + _nc.length + ' NC · ' + _ec.length + ' Écart · ' + _rr.length + ' Recommandé) :\n'
       + ncItems.map(n => '- [' + n.statut.toUpperCase() + '] [' + n.section + '] ' + n.point
-          + (n.obs ? '\n  Obs: ' + n.obs : '') + (n.photo ? ' [PHOTO]' : '')).join('\n')
+          + (n.obs ? '\n  Observation du conseiller: ' + n.obs : '') + (n.photo ? ' [📷 PHOTO DISPONIBLE]' : '')).join('\n')
     : '';
 
   const obsText = obsItems.length ? '\n\nPOINTS AVEC OBSERVATION :\n' +
@@ -7185,384 +7480,6 @@ window.emg_printSession = function(id) {
     };
   });
 })();
-
-// ═══════════════════════════════════════════════════════
-// MODULE RÉUNIONS & COMPTES RENDUS
-// ═══════════════════════════════════════════════════════
-const REU_KEY     = 'auditia_reunions';
-const GEMINI_KEY  = 'auditia_gemini_key';
-let reuSessions   = JSON.parse(localStorage.getItem(REU_KEY) || '[]');
-let reuActiveId   = null;
-let reuRecognition = null;
-let reuRecording  = false;
-let reuMediaRec   = null;
-let reuAudioChunks = [];
-let reuAudTimer   = null;
-let reuAudSec     = 0;
-
-function reu_sv() { localStorage.setItem(REU_KEY, JSON.stringify(reuSessions)); }
-
-function reu_getGeminiKey() { return localStorage.getItem(GEMINI_KEY) || ''; }
-
-window.reu_configGemini = function() {
-  const cur = reu_getGeminiKey();
-  const k = prompt('Clef API Google Gemini\n(Google AI Studio → aistudio.google.com → Get API key — gratuit) :', cur);
-  if (k === null) return;
-  localStorage.setItem(GEMINI_KEY, k.trim());
-  reu_updateGeminiStatus();
-  showToast(k.trim() ? '✅ Clef Gemini enregistrée' : 'Clef supprimée', 'success');
-};
-
-function reu_updateGeminiStatus() {
-  const el = g('reu-gemini-status');
-  if (!el) return;
-  const k = reu_getGeminiKey();
-  el.textContent = k ? 'Gemini : ✅ configuré' : 'Gemini : non configuré — cliquez ⚙️';
-  el.style.color = k ? 'var(--g2)' : 'var(--o2)';
-}
-
-// ── Render liste sessions ──
-function reu_renderSessions() {
-  reu_updateGeminiStatus();
-  const el = g('reu-sessions-list');
-  if (!el) return;
-  if (!reuSessions.length) {
-    el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--n1);font-size:.84rem">Aucune réunion enregistrée.<br>Créez votre première session.</div>';
-    return;
-  }
-  const sorted = [...reuSessions].sort((a,b) => (b.date+b.heure||'').localeCompare(a.date+a.heure||''));
-  el.innerHTML = sorted.map(s => {
-    const hasCR = !!(s.compteRendu);
-    const nbAct = (s.actions||[]).length;
-    return `<div style="background:#fff;border:1.5px solid var(--b3);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="reu_openSession('${s.id}')">
-      <div style="font-size:1.5rem">🎙️</div>
-      <div style="flex:1;min-width:0">
-        <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:.82rem;color:var(--b1)">${esc(s.titre||'Réunion sans titre')}</div>
-        <div style="font-size:.72rem;color:var(--n1);margin-top:2px">${s.date?new Date(s.date).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'}):'—'}${s.heure?' à '+s.heure:''}${s.lieu?' · '+esc(s.lieu):''}</div>
-        <div style="font-size:.68rem;margin-top:3px">${hasCR?'✅ Compte rendu rédigé':'📝 Transcription seule'}${nbAct?' · '+nbAct+' action'+(nbAct>1?'s':''):''}</div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:5px">
-        <button class="btn btn-p btn-sm" onclick="event.stopPropagation();reu_openSession('${s.id}')" style="font-size:.7rem;padding:3px 10px">✏️</button>
-        <button class="btn btn-sm" onclick="event.stopPropagation();reu_deleteSession('${s.id}')" style="font-size:.7rem;padding:3px 10px;background:#c62828;color:#fff;border:none;border-radius:6px;cursor:pointer">🗑</button>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-window.reu_newSession = function() {
-  const id = 'reu_' + Date.now() + '_' + Math.random().toString(36).slice(2,6);
-  const now = new Date();
-  const s = { id, titre:'', date: now.toISOString().slice(0,10), heure: now.toTimeString().slice(0,5), lieu:'', participants:'', odj:'', transcript:'', compteRendu:'', actions:[] };
-  reuSessions.push(s);
-  reuActiveId = id;
-  reu_sv();
-  reu_showForm(s);
-};
-
-window.reu_openSession = function(id) {
-  const s = reuSessions.find(x => x.id === id);
-  if (!s) return;
-  reuActiveId = id;
-  reu_showForm(s);
-};
-
-function reu_showForm(s) {
-  g('reu-sessions-list').style.display = 'none';
-  g('reu-form').style.display = 'block';
-  g('reu-titre').value      = s.titre || '';
-  g('reu-date').value       = s.date  || '';
-  g('reu-heure').value      = s.heure || '';
-  g('reu-lieu').value       = s.lieu  || '';
-  g('reu-participants').value = s.participants || '';
-  g('reu-odj').value        = s.odj   || '';
-  g('reu-transcript').value = s.transcript || '';
-  if (s.compteRendu) {
-    g('reu-cr-content').textContent = s.compteRendu;
-    g('reu-cr-content').style.display = 'block';
-  }
-  if (s.actions && s.actions.length) reu_renderActions(s.actions);
-  reu_switchTab('live', document.querySelector('#reu-trans-tabs .tab'));
-  reu_updateCharCount();
-  reu_updateGeminiStatus();
-}
-
-window.reu_switchTab = function(tab, btn) {
-  ['live','audio','manual'].forEach(t => { const el = g('reu-tab-'+t); if(el) el.style.display = t===tab?'block':'none'; });
-  document.querySelectorAll('#reu-trans-tabs .tab').forEach(b => b.classList.remove('on'));
-  if (btn) btn.classList.add('on');
-  if (tab === 'audio') reu_updateGeminiStatus();
-};
-
-// ── Live Speech ──
-window.reu_toggleLive = function() {
-  if (reuRecording) { reu_stopLive(); return; }
-  reu_startLive();
-};
-
-function reu_startLive() {
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!SR) { showToast('Web Speech non disponible sur ce navigateur', 'error', 5000); return; }
-  reuRecognition = new SR();
-  reuRecognition.lang = 'fr-FR';
-  reuRecognition.continuous = true;
-  reuRecognition.interimResults = true;
-  reuRecognition.maxAlternatives = 1;
-  let finalText = g('reu-transcript').value;
-  reuRecognition.onresult = function(e) {
-    let interim = '';
-    for (let i = e.resultIndex; i < e.results.length; i++) {
-      const t = e.results[i][0].transcript;
-      if (e.results[i].isFinal) { finalText += (finalText ? ' ' : '') + t; g('reu-transcript').value = finalText; reu_updateCharCount(); }
-      else { interim = t; }
-    }
-    const il = g('reu-live-interim'); if (il) il.textContent = interim;
-  };
-  reuRecognition.onerror = function(e) {
-    if (e.error === 'no-speech') return;
-    if (e.error === 'aborted') { if (reuRecording) reu_startLive(); return; }
-    g('reu-rec-status').textContent = '⚠️ ' + e.error;
-    reu_stopLive();
-  };
-  reuRecognition.onend = function() {
-    if (reuRecording) setTimeout(reu_startLive, 300); // relance auto iOS
-  };
-  reuRecognition.start();
-  reuRecording = true;
-  g('reu-rec-btn').style.background = '#2e7d32';
-  g('reu-rec-ico').textContent = '⏹';
-  g('reu-rec-lbl').textContent = 'Arrêter';
-  g('reu-rec-status').textContent = '🔴 Enregistrement en cours…';
-}
-
-function reu_stopLive() {
-  reuRecording = false;
-  if (reuRecognition) { reuRecognition.abort(); reuRecognition = null; }
-  g('reu-rec-btn').style.background = '#c62828';
-  g('reu-rec-ico').textContent = '🔴';
-  g('reu-rec-lbl').textContent = 'Démarrer';
-  g('reu-rec-status').textContent = '✅ Arrêté';
-  const il = g('reu-live-interim'); if (il) il.textContent = '';
-}
-
-// ── Audio Recording → Gemini ──
-window.reu_toggleAudioRec = function() {
-  if (reuMediaRec && reuMediaRec.state === 'recording') { reu_stopAudioRec(); return; }
-  reu_startAudioRec();
-};
-
-async function reu_startAudioRec() {
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    reuAudioChunks = [];
-    reuMediaRec = new MediaRecorder(stream, { mimeType: MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4' });
-    reuMediaRec.ondataavailable = e => { if (e.data.size > 0) reuAudioChunks.push(e.data); };
-    reuMediaRec.onstop = async () => {
-      stream.getTracks().forEach(t => t.stop());
-      const blob = new Blob(reuAudioChunks, { type: reuMediaRec.mimeType });
-      await reu_transcribeBlob(blob, reuMediaRec.mimeType);
-    };
-    reuMediaRec.start(1000);
-    reuAudSec = 0;
-    const timer = g('reu-aud-timer');
-    if (timer) timer.style.display = 'block';
-    reuAudTimer = setInterval(() => {
-      reuAudSec++;
-      const m = String(Math.floor(reuAudSec/60)).padStart(2,'0');
-      const s = String(reuAudSec%60).padStart(2,'0');
-      if (timer) timer.textContent = m + ':' + s;
-    }, 1000);
-    g('reu-aud-btn').textContent = '⏹ Arrêter';
-    g('reu-aud-btn').style.background = '#c62828';
-    g('reu-aud-status').textContent = '🔴 Enregistrement…';
-  } catch(e) {
-    showToast('Micro non disponible : ' + e.message, 'error');
-  }
-}
-
-function reu_stopAudioRec() {
-  if (reuMediaRec) reuMediaRec.stop();
-  if (reuAudTimer) clearInterval(reuAudTimer);
-  g('reu-aud-btn').textContent = '🎤 Enregistrer';
-  g('reu-aud-btn').style.background = '#6a1b9a';
-  g('reu-aud-status').textContent = '⏳ Transcription Gemini en cours…';
-}
-
-window.reu_transcribeFile = async function(file) {
-  if (!file) return;
-  g('reu-aud-status').textContent = '⏳ Transcription Gemini en cours…';
-  await reu_transcribeBlob(file, file.type);
-};
-
-async function reu_transcribeBlob(blob, mimeType) {
-  const key = reu_getGeminiKey();
-  if (!key) { showToast('Clef Gemini manquante — cliquez ⚙️ Clef Gemini', 'error', 5000); g('reu-aud-status').textContent = '❌ Clef Gemini manquante'; return; }
-  try {
-    const base64 = await new Promise((res, rej) => {
-      const r = new FileReader();
-      r.onload = () => res(r.result.split(',')[1]);
-      r.onerror = rej;
-      r.readAsDataURL(blob);
-    });
-    const payload = {
-      contents: [{ parts: [
-        { inline_data: { mime_type: mimeType, data: base64 } },
-        { text: 'Transcris fidèlement cet enregistrement audio en français. Sépare les interventions par des sauts de ligne. Identifie les locuteurs si possible (Locuteur 1, Locuteur 2…).' }
-      ]}]
-    };
-    const resp = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + key, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
-    });
-    const data = await resp.json();
-    if (!resp.ok) throw new Error((data.error && data.error.message) || resp.status);
-    const text = data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text || '';
-    const cur = g('reu-transcript').value;
-    g('reu-transcript').value = cur ? cur + '\n\n' + text : text;
-    reu_updateCharCount();
-    g('reu-aud-status').textContent = '✅ Transcription terminée';
-    showToast('✅ Transcription Gemini OK', 'success');
-    const timer = g('reu-aud-timer'); if (timer) timer.style.display = 'none';
-  } catch(e) {
-    g('reu-aud-status').textContent = '❌ Erreur : ' + e.message;
-    showToast('❌ Gemini : ' + e.message, 'error', 6000);
-  }
-}
-
-// ── Compte rendu Claude ──
-window.reu_genCompteRendu = async function() {
-  const apiKey = getApiKey();
-  if (!apiKey) { showToast('Clef Claude API manquante', 'error'); return; }
-  const transcript = g('reu-transcript').value.trim();
-  if (!transcript) { showToast('Aucune transcription à analyser', 'error'); return; }
-  const titre = g('reu-titre').value || 'Réunion';
-  const date  = g('reu-date').value  || '';
-  const lieu  = g('reu-lieu').value  || '';
-  const parts = g('reu-participants').value || '';
-  const odj   = g('reu-odj').value  || '';
-  g('reu-cr-loading').style.display = 'block';
-  g('reu-cr-content').style.display = 'none';
-  const prompt = 'Tu es rédacteur de comptes rendus administratifs pour une collectivité territoriale française (3CBO — Communauté de Communes).\n\n'
-    + 'RÉUNION : ' + titre + '\n'
-    + (date ? 'DATE : ' + new Date(date).toLocaleDateString('fr-FR', {weekday:'long',day:'numeric',month:'long',year:'numeric'}) + '\n' : '')
-    + (lieu ? 'LIEU : ' + lieu + '\n' : '')
-    + (parts ? 'PARTICIPANTS : ' + parts + '\n' : '')
-    + (odj ? 'ORDRE DU JOUR :\n' + odj + '\n\n' : '\n')
-    + 'TRANSCRIPTION :\n' + transcript + '\n\n'
-    + 'Rédige un compte rendu officiel structuré ainsi :\n'
-    + '1. RÉSUMÉ EXÉCUTIF (3-5 lignes)\n'
-    + '2. POINTS ABORDÉS (par thème)\n'
-    + '3. DÉCISIONS PRISES\n'
-    + '4. ACTIONS À SUIVRE (format : • Action | Responsable | Délai)\n'
-    + '5. PROCHAINE RÉUNION (si mentionnée)\n\n'
-    + 'Ton : formel, concis, administratif. Utilise des titres clairs.';
-  try {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
-      body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 2500,
-        messages: [{ role: 'user', content: prompt }] })
-    });
-    const data2 = await resp.json();
-    const cr = (data2.content||[]).map(b => b.text||'').join('').trim();
-    g('reu-cr-loading').style.display = 'none';
-    g('reu-cr-content').textContent = cr;
-    g('reu-cr-content').style.display = 'block';
-    // Extraire les actions
-    const actions = [];
-    cr.split('\n').forEach(line => {
-      const m = line.match(/[•\-\*]\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)/);
-      if (m) actions.push({ action: m[1].trim(), responsable: m[2].trim(), delai: m[3].trim() });
-    });
-    if (actions.length) reu_renderActions(actions);
-    // Sauvegarder auto
-    const s = reuSessions.find(x => x.id === reuActiveId);
-    if (s) { s.compteRendu = cr; s.actions = actions; reu_sv(); }
-    showToast('✅ Compte rendu généré', 'success');
-  } catch(e) {
-    g('reu-cr-loading').style.display = 'none';
-    showToast('❌ Erreur Claude : ' + e.message, 'error', 5000);
-  }
-};
-
-function reu_renderActions(actions) {
-  const bloc = g('reu-actions-bloc');
-  const list = g('reu-actions-list');
-  if (!bloc || !list || !actions.length) return;
-  list.innerHTML = actions.map((a, i) =>
-    `<div style="padding:8px 10px;border-radius:8px;background:${i%2?'#f9f9f9':'#fff'};border:1px solid #e8f5e9;margin-bottom:4px;display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center">
-      <div style="font-size:.8rem;font-weight:600">${esc(a.action)}</div>
-      <div style="font-size:.72rem;color:var(--b1);white-space:nowrap">👤 ${esc(a.responsable)}</div>
-      <div style="font-size:.72rem;color:var(--o2);white-space:nowrap">📅 ${esc(a.delai)}</div>
-    </div>`
-  ).join('');
-  bloc.style.display = 'block';
-}
-
-function reu_updateCharCount() {
-  const el = g('reu-char-count');
-  const ta = g('reu-transcript');
-  if (el && ta) el.textContent = ta.value.length + ' caractères';
-}
-
-window.reu_save = function() {
-  const s = reuSessions.find(x => x.id === reuActiveId);
-  if (!s) return;
-  s.titre        = g('reu-titre').value;
-  s.date         = g('reu-date').value;
-  s.heure        = g('reu-heure').value;
-  s.lieu         = g('reu-lieu').value;
-  s.participants = g('reu-participants').value;
-  s.odj          = g('reu-odj').value;
-  s.transcript   = g('reu-transcript').value;
-  if (g('reu-cr-content').style.display !== 'none') s.compteRendu = g('reu-cr-content').textContent;
-  reu_sv();
-  showToast('✅ Réunion sauvegardée', 'success');
-  if (reuRecording) reu_stopLive();
-  reu_cancel();
-};
-
-window.reu_cancel = function() {
-  reuActiveId = null;
-  if (reuRecording) reu_stopLive();
-  g('reu-form').style.display = 'none';
-  g('reu-sessions-list').style.display = 'block';
-  reu_renderSessions();
-};
-
-window.reu_deleteSession = function(id) {
-  customConfirm('Supprimer cette réunion ?', () => {
-    reuSessions = reuSessions.filter(x => x.id !== id);
-    reu_sv();
-    reu_renderSessions();
-  });
-};
-
-window.reu_exportGDoc = async function() {
-  const s = reuSessions.find(x => x.id === reuActiveId);
-  if (!s || !s.compteRendu) { showToast('Générez d\'abord le compte rendu', 'default'); return; }
-  if (!gdriveToken) { showToast('Connectez Google Drive d\'abord', 'error'); return; }
-  showToast('⏳ Export Google Docs…', 'default', 5000);
-  const title = 'CR — ' + (s.titre||'Réunion') + ' — ' + (s.date ? new Date(s.date).toLocaleDateString('fr-FR') : '');
-  const html = '<html><body><h1>' + esc(s.titre||'Compte rendu') + '</h1>'
-    + '<p><strong>Date :</strong> ' + (s.date ? new Date(s.date).toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}) : '—') + (s.heure ? ' à ' + s.heure : '') + '</p>'
-    + (s.lieu ? '<p><strong>Lieu :</strong> ' + esc(s.lieu) + '</p>' : '')
-    + (s.participants ? '<p><strong>Participants :</strong> ' + esc(s.participants) + '</p>' : '')
-    + '<hr><pre style="white-space:pre-wrap;font-family:Arial">' + esc(s.compteRendu) + '</pre></body></html>';
-  try {
-    const docResp = await fetch('https://docs.googleapis.com/v1/documents', {
-      method:'POST', headers:{'Authorization':'Bearer '+gdriveToken,'Content-Type':'application/json'},
-      body: JSON.stringify({ title })
-    });
-    if (!docResp.ok) throw new Error('Création doc impossible');
-    const doc = await docResp.json();
-    await fetch('https://www.googleapis.com/upload/drive/v3/files/'+doc.documentId+'?uploadType=media',{
-      method:'PATCH',headers:{'Authorization':'Bearer '+gdriveToken,'Content-Type':'text/html'},
-      body: html
-    });
-    showToast('✅ Exporté dans Google Docs', 'success', 4000);
-  } catch(e) { showToast('❌ Export : ' + e.message, 'error'); }
-};
-
 
 window.openGuide = function() {
   var m = document.getElementById("guide-modal");
@@ -10302,8 +10219,14 @@ async function genAIRapport() {
   // Build structured data for the prompt
   const checkData = buildChecklistSummary();
   
-  const prompt = `Tu es un conseiller de prévention expert pour des collectivités territoriales françaises (AuditIA Prévention).
-Tu dois rédiger un rapport de visite de sécurité professionnel en HTML.
+  const prompt = `Tu es un Conseiller de Prévention mandaté par la Communauté de Communes 3CBO pour réaliser des visites de prévention dans les bâtiments communaux.
+
+RÔLE — respecter absolument :
+Tu es CONSEILLER, pas donneur d'ordre. Tu formules des RECOMMANDATIONS et des RAPPELS RÉGLEMENTAIRES.
+- JAMAIS : "vous devez", "obligation de réaliser des travaux", "il faut impérativement"
+- TOUJOURS : "il est recommandé de", "à titre de préconisation", "je rappelle que la réglementation prévoit", "à inscrire dans la programmation"
+- Proposer EN PRIORITÉ des mesures organisationnelles et peu coûteuses avant tout investissement
+- Le rapport est un outil de dialogue, pas un acte coercitif
 
 DONNÉES DE LA VISITE :
 Commune : ${cv ? cv.commune : '—'}
@@ -10312,41 +10235,42 @@ Type : ${typeLabels[typeERP] || typeERP}
 Année construction : ${annee || 'non renseignée'}
 Date de visite : ${new Date(dateVisite).toLocaleDateString('fr-FR', {day:'numeric',month:'long',year:'numeric'})}
 Destinataire : ${destLabels[destinataire]}
-Résultat : ${checkData.meta.tOk} conformes / ${checkData.meta.tNc} non-conformités / ${checkData.meta.tEc || 0} écarts / ${checkData.meta.tTot} contrôlés = ${checkData.meta.pct}% conformité
+Résultat global : ${checkData.meta.tOk} conformes / ${checkData.meta.tNc} NC / ${checkData.meta.tEc || 0} écarts / ${checkData.meta.tTot} contrôlés = ${checkData.meta.pct}% conformité
 
 ${checkData.text}
 ${context ? '\nCONTEXTE COMPLÉMENTAIRE :\n' + context : ''}
 
-STRUCTURE OBLIGATOIRE DU RAPPORT (respecte exactement cet ordre) :
+STRUCTURE DU RAPPORT :
 
-1. En-tête : titre "RAPPORT DE VISITE — CONTRÔLE BÂTIMENT", sous-titre avec type de bâtiment et commune, ligne "Conseiller de Prévention | AuditIA Prévention | Visite du [date]"
+1. EN-TÊTE : Titre "RAPPORT DE VISITE DE PRÉVENTION — [TYPE] [COMMUNE]" + "Conseiller de Prévention 3CBO | Visite du [date]"
+Ajouter : "Ce rapport est établi à titre consultatif dans le cadre de la mission de conseil en prévention. Il ne constitue pas un acte de contrôle au sens du Code du travail."
 
-2. Tableau récapitulatif : Convention/Commune, Bâtiment, Date de visite, Surface (si connue), Responsable du site (si mentionné), Visite réalisée par, Points contrôlés / % conformité
+2. TABLEAU DE SYNTHÈSE : Commune | Bâtiment | Date | Type | Points contrôlés | % conformité (fond vert ≥80%, orange 60-79%, rouge <60%)
 
-3. Sections thématiques (numérotées 1, 2, 3...) correspondant aux sections de la checklist qui ont des points annotés. Pour chaque point :
-   - Un bloc coloré avec mention explicite "NON CONFORME", "ÉCART", "CONFORME" ou "NON VÉRIFIÉ" en gras
-   - Explication du constat (ce qui a été observé)
-   - Pour NC et ÉCART : risques identifiés et conséquences possibles
-   - "Action requise :" avec délai
+3. INTRODUCTION : 2-3 lignes de contexte rappelant l'objectif et la qualité de l'intervenant.
 
-4. Section "Points en attente de vérification" : tableau avec Point / Motif / Responsable
+4. CONSTATS ET RECOMMANDATIONS PAR THÈME — pour chaque section avec points annotés :
+Titre de section : fond bleu marine #0d2a4e, texte blanc.
 
-5. "Récapitulatif des actions à mener" : tableau avec Priorité (URGENT / ÉLEVÉ / MOYEN / À VÉRIF.) / Thème / Constat / Action & Délai
+Pour chaque point NON CONFORME / ÉCART / RECOMMANDÉ :
+- Badge coloré (NON CONFORME rouge / ÉCART orange / RECOMMANDÉ bleu)
+- "Constat :" observation factuelle
+- "Rappel réglementaire :" référence légale applicable (ex: "L'art. R4227-29 du Code du travail prévoit que...")
+- "Préconisation :" EN PRIORITÉ mesure organisationnelle ou peu coûteuse, PUIS si nécessaire matériel simple, PUIS "à inscrire dans la programmation budgétaire" pour travaux structurels
+- Si [📷 PHOTO DISPONIBLE] : ajouter EXACTEMENT cette balise :
+  <div class="photo-slot" data-desc="[description précise de ce que montre vraisemblablement la photo compte tenu du constat — ex: Vue de l'extincteur du couloir, étiquette de vérification datant de 2021 visible en façade, corps légèrement cabossé]">📷 <em>[Même description lisible pour archivage]</em></div>
 
-6. Note de suivi finale dans un encadré
+Pour chaque point CONFORME : bloc vert sobre, 1 ligne.
 
-RÈGLES DE MISE EN FORME HTML :
-- Blocs NON CONFORME : fond rouge clair (#ffebee), bordure gauche rouge (#c62828), padding 12px
-- Blocs ÉCART : fond jaune clair (#fff8e1), bordure gauche orange (#f57c00)
-- Blocs CONFORME : fond vert clair (#e8f5e9), bordure gauche vert (#2e7d32)
-- Blocs NON VÉRIFIÉ : fond gris clair (#f5f5f5), bordure gauche grise (#9e9e9e)
-- Tableaux : bordures fines, en-têtes fond bleu marine (#0d2a4e) texte blanc
-- Titres de section : fond bleu marine (#0d2a4e) texte blanc, padding 8px 12px, font-weight 800
-- Priorité URGENT : badge rouge. ÉLEVÉ : badge orange. MOYEN : badge jaune. À VÉRIF. : badge gris
+5. RÉCAPITULATIF DES PRÉCONISATIONS : tableau Priorité | Thème | Constat | Préconisation | Nature (Organisationnelle / Matériel / Programmation)
+Priorités : ATTENTION (rouge) / VIGILANCE (orange) / SUGGESTION (bleu) / SATISFAISANT (vert). JAMAIS "URGENT" ni délai imposé.
 
-Génère uniquement le HTML du corps du rapport (sans <html><head><body>
-). 
-Sois précis, concret, professionnel. Cite les valeurs mesurées et les références réglementaires quand elles sont disponibles dans les données.`;
+6. CONCLUSION : Paragraphe bienveillant rappelant la disponibilité du Conseiller de Prévention.
+Inclure : "En cas d'incident ou de conflit — contactez le Service Prévention au 06 59 14 17 89."
+
+HTML : NC fond #ffebee bordure #c62828 | Écart fond #fff8e1 bordure #f57c00 | Recommandé fond #e3f2fd bordure #1565c0 | Conforme fond #e8f5e9 bordure #2e7d32
+photo-slot : fond #f5f5f5 bordure pointillée #bbb padding 10px font-style italic font-size .85em marge-haut 8px
+Générer uniquement le HTML du corps (sans html/head/body). Factuel, bienveillant, constructif.`;
 
   // Show loading
   if (g('ai-rapport-body')) g('ai-rapport-body').style.display = 'none';
@@ -10497,6 +10421,7 @@ function genReport(aiAnalysis) {
       if (e.s === 'C')  { blockStyle = 'background:#e8f5e9;border-left:5px solid #2e7d32'; badge = '<span style="display:inline-block;background:#2e7d32;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">✅ CONFORME</span>'; }
       else if (e.s === 'EC') { blockStyle = 'background:#fff8e1;border-left:5px solid #f57c00'; badge = '<span style="display:inline-block;background:#f57c00;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">⚠️ ÉCART</span>'; }
       else if (e.s === 'NC') { blockStyle = 'background:#ffebee;border-left:5px solid #c62828'; badge = '<span style="display:inline-block;background:#c62828;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">❌ NON CONFORME</span>'; }
+      else if (e.s === 'R')  { blockStyle = 'background:#e3f2fd;border-left:5px solid #1565c0'; badge = '<span style="display:inline-block;background:#1565c0;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">💡 RECOMMANDÉ</span>'; }
       else if (e.s === 'NV') { blockStyle = 'background:#f5f5f5;border-left:5px solid #9e9e9e'; badge = '<span style="display:inline-block;background:#9e9e9e;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">🔲 NON VÉRIFIÉ</span>'; }
       else if (e.s === 'NA') { blockStyle = 'background:#f8f9fa;border-left:5px solid #bbb'; badge = '<span style="display:inline-block;background:#bbb;color:#fff;font-family:Raleway,sans-serif;font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:4px;margin-bottom:6px">➖ N/A</span>'; }
       else { blockStyle = 'background:#f8f9fa;border-left:5px solid #bbb'; badge = ''; }
@@ -17299,131 +17224,6 @@ document.addEventListener('click', function(e) {
 <!-- ════════════════════════════════════════
      PAGE ÉMARGEMENT
 ════════════════════════════════════════ -->
-<!-- ════ PAGE RÉUNIONS ════ -->
-<div id="pg-reunions" class="pg">
-  <div class="pg-num no-print">P-REU</div>
-  <div class="brow no-print" style="align-items:center;margin-bottom:14px">
-    <div>
-      <div style="font-family:'Raleway',sans-serif;font-weight:900;font-size:1.05rem;color:var(--b1)">🎙️ Réunions & Comptes rendus</div>
-      <div style="font-size:.72rem;color:var(--n1)" id="reu-gemini-status">Gemini : non configuré</div>
-    </div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-s btn-sm" onclick="reu_configGemini()">⚙️ Clef Gemini</button>
-      <button class="btn btn-p btn-sm" onclick="reu_newSession()">+ Réunion</button>
-    </div>
-  </div>
-  <div id="reu-sessions-list"></div>
-  <div id="reu-form" style="display:none">
-    <!-- Métadonnées -->
-    <div style="background:linear-gradient(135deg,#1a237e,#283593);border-radius:12px;padding:14px 16px;margin-bottom:14px;color:#fff">
-      <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:.85rem;margin-bottom:10px">📋 Informations</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div style="grid-column:1/-1">
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">TITRE</div>
-          <input type="text" id="reu-titre" class="input" placeholder="Ex : Réunion CODIR Château-Renard" style="width:100%;font-size:.8rem">
-        </div>
-        <div>
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">DATE</div>
-          <input type="date" id="reu-date" class="input" style="width:100%;font-size:.8rem">
-        </div>
-        <div>
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">HEURE</div>
-          <input type="time" id="reu-heure" class="input" style="width:100%;font-size:.8rem">
-        </div>
-        <div style="grid-column:1/-1">
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">LIEU</div>
-          <input type="text" id="reu-lieu" class="input" placeholder="Salle de réunion, Mairie…" style="width:100%;font-size:.8rem">
-        </div>
-        <div style="grid-column:1/-1">
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">PARTICIPANTS</div>
-          <input type="text" id="reu-participants" class="input" placeholder="Noms séparés par des virgules" style="width:100%;font-size:.8rem">
-        </div>
-        <div style="grid-column:1/-1">
-          <div style="font-size:.65rem;opacity:.7;margin-bottom:3px;font-weight:700">ORDRE DU JOUR (optionnel)</div>
-          <textarea id="reu-odj" class="input" placeholder="Points à aborder…" style="width:100%;font-size:.8rem;min-height:60px;resize:vertical"></textarea>
-        </div>
-      </div>
-    </div>
-
-    <!-- Transcription -->
-    <div style="background:#fff;border:1.5px solid var(--b3);border-radius:12px;padding:14px;margin-bottom:14px">
-      <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:.85rem;color:var(--b1);margin-bottom:10px">🎙️ Transcription</div>
-      <!-- Tabs -->
-      <div class="tabs" style="margin-bottom:12px" id="reu-trans-tabs">
-        <button class="tab on" onclick="reu_switchTab('live',this)">🔴 Temps réel</button>
-        <button class="tab" onclick="reu_switchTab('audio',this)">🎵 Audio Gemini</button>
-        <button class="tab" onclick="reu_switchTab('manual',this)">✏️ Manuel</button>
-      </div>
-
-      <!-- Live tab -->
-      <div id="reu-tab-live">
-        <div class="ib" style="margin-bottom:10px;font-size:.75rem">Utilise Google Speech sur Chrome/Android. La transcription s'accumule en direct. Sur iOS : fonctionne partiellement (relance auto).</div>
-        <div style="display:flex;gap:8px;margin-bottom:10px;align-items:center;flex-wrap:wrap">
-          <button id="reu-rec-btn" onclick="reu_toggleLive()" style="background:#c62828;color:#fff;border:none;border-radius:10px;padding:12px 20px;font-family:'Raleway',sans-serif;font-weight:800;font-size:.88rem;cursor:pointer;display:flex;align-items:center;gap:8px">
-            <span id="reu-rec-ico">🔴</span> <span id="reu-rec-lbl">Démarrer</span>
-          </button>
-          <div id="reu-rec-status" style="font-size:.75rem;color:var(--n1)"></div>
-        </div>
-        <div id="reu-live-interim" style="font-size:.78rem;color:#999;font-style:italic;min-height:20px;margin-bottom:6px"></div>
-      </div>
-
-      <!-- Audio Gemini tab -->
-      <div id="reu-tab-audio" style="display:none">
-        <div class="ib" style="margin-bottom:10px;font-size:.75rem;background:#f3e5f5;border-color:#9c27b0;color:#6a1b9a">
-          Nécessite une clef <strong>Gemini API</strong> (Google AI Studio — gratuit). Configure-la via le bouton ⚙️ Clef Gemini.
-        </div>
-        <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center">
-          <button id="reu-aud-btn" onclick="reu_toggleAudioRec()" style="background:#6a1b9a;color:#fff;border:none;border-radius:10px;padding:12px 20px;font-family:'Raleway',sans-serif;font-weight:800;font-size:.88rem;cursor:pointer">
-            🎤 Enregistrer
-          </button>
-          <span style="color:var(--n1);font-size:.72rem">— ou —</span>
-          <label style="background:#e8eaf6;color:#3949ab;border:none;border-radius:10px;padding:11px 16px;font-family:'Raleway',sans-serif;font-weight:700;font-size:.8rem;cursor:pointer">
-            📂 Fichier audio
-            <input type="file" id="reu-audio-file" accept="audio/*" style="display:none" onchange="reu_transcribeFile(this.files[0])">
-          </label>
-        </div>
-        <div id="reu-aud-status" style="font-size:.75rem;color:var(--n1);margin-bottom:8px"></div>
-        <div id="reu-aud-timer" style="font-size:1.2rem;font-family:'DM Mono',monospace;color:#6a1b9a;display:none">00:00</div>
-      </div>
-
-      <!-- Manuel tab -->
-      <div id="reu-tab-manual" style="display:none">
-        <div class="ib" style="margin-bottom:8px;font-size:.75rem">Collez une transcription externe (Otter.ai, Apple Voice Memos, Google Recorder…) ou tapez directement.</div>
-      </div>
-
-      <!-- Zone texte commune (visible dans tous les tabs) -->
-      <textarea id="reu-transcript" class="input" placeholder="La transcription apparaît ici — vous pouvez aussi la modifier…" style="width:100%;min-height:140px;font-size:.8rem;line-height:1.6;resize:vertical;margin-top:8px"></textarea>
-      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:6px">
-        <button class="btn btn-s btn-sm" onclick="g('reu-transcript').value=''">🗑 Vider</button>
-        <span id="reu-char-count" style="font-size:.7rem;color:var(--n1);align-self:center"></span>
-      </div>
-    </div>
-
-    <!-- Compte rendu IA -->
-    <div style="background:#fff;border:1.5px solid var(--b3);border-radius:12px;padding:14px;margin-bottom:14px">
-      <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:.85rem;color:var(--b1);margin-bottom:10px">✨ Compte rendu IA</div>
-      <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
-        <button class="btn btn-p" onclick="reu_genCompteRendu()">✨ Générer le compte rendu</button>
-        <button class="btn btn-s btn-sm" onclick="reu_exportGDoc()">📄 Google Docs</button>
-      </div>
-      <div id="reu-cr-loading" style="display:none;text-align:center;padding:16px;color:var(--b2);font-size:.84rem">✨ Génération en cours…</div>
-      <div id="reu-cr-content" style="font-size:.83rem;line-height:1.7;white-space:pre-wrap;display:none;background:#f8f9ff;border-radius:8px;padding:12px;border:1px solid var(--b3)"></div>
-    </div>
-
-    <!-- Actions extraites -->
-    <div id="reu-actions-bloc" style="display:none;background:#fff;border:1.5px solid #a5d6a7;border-radius:12px;padding:14px;margin-bottom:14px">
-      <div style="font-family:'Raleway',sans-serif;font-weight:800;font-size:.85rem;color:var(--g2);margin-bottom:8px">📌 Actions à suivre</div>
-      <div id="reu-actions-list"></div>
-    </div>
-
-    <!-- Footer -->
-    <div class="brow no-print" style="gap:8px;flex-wrap:wrap;margin-bottom:14px">
-      <button class="btn btn-s btn-sm" onclick="reu_cancel()">Annuler</button>
-      <button class="btn btn-g" onclick="reu_save()">💾 Sauvegarder</button>
-    </div>
-  </div>
-</div><!-- /pg-reunions -->
-
 <div id="pg-emargement" class="pg">
   <div class="pg-num no-print">P-EMG</div>
 
@@ -17747,58 +17547,80 @@ window.fa_buildInvoiceHtml = async function(f) {
   }
   // Lignes missions — sans colonne Quantité
   const lignesHtml=(f.lignes||[]).map(l=>
-    '<tr><td style="padding:8px 10px;border:1px solid #ddd;font-size:10pt">'+faEsc(l.titre)+'</td>'+
-    '<td style="padding:8px 10px;border:1px solid #ddd;text-align:center;font-size:10pt">30,00&nbsp;€</td>'+
-    '<td style="padding:8px 10px;border:1px solid #ddd;text-align:center;font-size:10pt;font-weight:700">'+l.h.toFixed(1)+'&nbsp;h</td>'+
-    '<td style="padding:8px 10px;border:1px solid #ddd;text-align:right;font-size:10pt;font-weight:700">'+(l.h*TAUX).toFixed(2).replace('.',',')+'&nbsp;€</td></tr>'
+    '<tr><td style="padding:5px 8px;border:1px solid #ddd;font-size:9.5pt">'+faEsc(l.titre)+'</td>'+
+    '<td style="padding:5px 8px;border:1px solid #ddd;text-align:center;font-size:9.5pt">30,00&nbsp;€</td>'+
+    '<td style="padding:5px 8px;border:1px solid #ddd;text-align:center;font-size:9.5pt;font-weight:700">'+l.h.toFixed(1)+'&nbsp;h</td>'+
+    '<td style="padding:5px 8px;border:1px solid #ddd;text-align:right;font-size:9.5pt;font-weight:700">'+(l.h*TAUX).toFixed(2).replace('.',',')+'&nbsp;€</td></tr>'
   ).join('');
 
   return `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
 <style>
-body{font-family:Arial,sans-serif;margin:1.5cm 2cm;font-size:11pt;color:#222;background:#fff}
-h2{color:#1b5e20;border-bottom:2px solid #1b5e20;padding-bottom:4px;margin-top:20px;font-size:11pt;text-transform:uppercase;letter-spacing:.5px}
+@page{size:A4;margin:12mm 15mm}
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;font-size:10pt;color:#222;background:#fff;margin:0;padding:0}
+h2{color:#1b5e20;border-bottom:2px solid #1b5e20;padding-bottom:3px;margin:12px 0 6px;font-size:10pt;text-transform:uppercase;letter-spacing:.5px}
 table{border-collapse:collapse;width:100%}
-th{background:#f57c00;color:#fff;padding:7px 10px;text-align:left;font-size:10pt;border:1px solid #f57c00}
+th{background:#f57c00;color:#fff;padding:5px 8px;text-align:left;font-size:9.5pt;border:1px solid #f57c00}
 td{border:1px solid #ddd}
-.total-box{background:#e8f5e9;border:2px solid #1b5e20;border-radius:8px;padding:14px 18px;min-width:220px;text-align:center;display:inline-block}
-.mention{font-size:9pt;color:#444;line-height:1.6}
-.mention td{border:none;padding:2px 8px;vertical-align:top}
-.mention td:first-child{font-weight:700;white-space:nowrap;color:#1b5e20;min-width:120px}
+.total-box{background:#e8f5e9;border:2px solid #1b5e20;border-radius:6px;padding:10px 14px;min-width:200px;text-align:center;display:inline-block}
+.mention{font-size:9pt;color:#444;line-height:1.4}
+.mention td{border:none;padding:1px 6px;vertical-align:top}
+.mention td:first-child{font-weight:700;white-space:nowrap;color:#1b5e20;min-width:110px}
+/* Tableau-enveloppe : thead/tfoot se répètent à chaque page imprimée */
+table.page-wrap{width:100%;border:none}
+table.page-wrap thead{display:table-header-group}
+table.page-wrap tfoot{display:table-footer-group}
+table.page-wrap tbody{display:table-row-group}
+table.page-wrap td{border:none;padding:0}
 </style></head><body>
 
-<!-- EN-TÊTE -->
-<table style="border:none;margin-bottom:20px;width:100%"><tr>
-  <td style="border:none;width:40%;vertical-align:top">${logoHtml}</td>
-  <td style="border:none;width:60%;text-align:right;vertical-align:top">
-    <div style="border:2px solid #1b5e20;border-radius:6px;display:inline-block;padding:10px 18px">
-      <div style="font-size:1.1rem;font-weight:900;color:#1b5e20;letter-spacing:.5px">FACTURE N°&nbsp;${faEsc(f.numero)}</div>
-      <div style="font-size:9pt;color:#666;margin-top:4px">Date d'émission : ${faFmt(f.date)}</div>
+<table class="page-wrap">
+<thead><tr><td>
+  <!-- EN-TÊTE répété sur chaque page -->
+  <div style="border-bottom:2px solid #1b5e20;padding-bottom:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+    <div>${logoHtml}</div>
+    <div style="text-align:right">
+      <div style="border:2px solid #1b5e20;border-radius:5px;display:inline-block;padding:6px 14px">
+        <div style="font-size:1rem;font-weight:900;color:#1b5e20;letter-spacing:.5px">FACTURE N°&nbsp;${faEsc(f.numero)}</div>
+        <div style="font-size:8.5pt;color:#666;margin-top:2px">Date d'émission : ${faFmt(f.date)}</div>
+      </div>
+      ${f.datePaiement?'<div style="margin-top:4px;background:#e8f5e9;color:#1b5e20;padding:2px 10px;border-radius:5px;font-size:8.5pt;font-weight:700;display:inline-block">✅ Payé le '+faFmt(f.datePaiement)+'</div>':''}
     </div>
-    ${f.datePaiement?'<div style="margin-top:6px;background:#e8f5e9;color:#1b5e20;padding:3px 12px;border-radius:6px;font-size:9pt;font-weight:700;display:inline-block">✅ Payé le '+faFmt(f.datePaiement)+'</div>':''}
-  </td>
-</tr></table>
+  </div>
+</td></tr></thead>
+
+<tfoot><tr><td>
+  <!-- PIED DE PAGE répété sur chaque page -->
+  <div style="border-top:1px solid #ccc;margin-top:8px;padding-top:5px;text-align:center;font-size:7.5pt;color:#888;line-height:1.5">
+    COMMUNAUTÉ DE COMMUNES DE LA CLÉRY DU BETZ ET DE L'OUANNE &nbsp;·&nbsp; SIRET : 200 067 668 00018<br>
+    569 Route de Chatillon Coligny, 45220 Château-Renard &nbsp;·&nbsp; Service Hygiène et Sécurité
+  </div>
+</td></tr></tfoot>
+
+<tbody><tr><td>
+<!-- CONTENU PRINCIPAL -->
 
 <!-- ÉMETTEUR / DESTINATAIRE -->
-<table style="border:none;margin-bottom:20px;width:100%"><tr>
-  <td style="border:none;width:50%;vertical-align:top;font-size:10pt;padding-right:20px">
-    <div style="font-weight:900;color:#1b5e20;margin-bottom:4px;font-size:10.5pt">ÉMETTEUR</div>
+<table style="border:none;margin-bottom:12px;width:100%"><tr>
+  <td style="border:none;width:50%;vertical-align:top;font-size:9.5pt;padding-right:16px">
+    <div style="font-weight:900;color:#1b5e20;margin-bottom:3px;font-size:10pt">ÉMETTEUR</div>
     <strong>COMMUNAUTÉ DE COMMUNES<br>DE LA CLÉRY DU BETZ ET DE L'OUANNE</strong><br>
     569 Route de Chatillon Coligny<br>45220 CHATEAU-RENARD<br>
     Service Hygiène et Sécurité<br>
-    <span style="font-size:9pt;color:#555">SIRET : 200 067 668 00018</span>
+    <span style="font-size:8.5pt;color:#555">SIRET : 200 067 668 00018</span>
   </td>
-  <td style="border:none;width:50%;vertical-align:top;font-size:10pt;background:#f9f9f9;border-radius:6px;padding:10px">
-    <div style="font-weight:900;color:#1b5e20;margin-bottom:4px;font-size:10.5pt">DESTINATAIRE</div>
+  <td style="border:none;width:50%;vertical-align:top;font-size:9.5pt;background:#f9f9f9;border-radius:5px;padding:8px">
+    <div style="font-weight:900;color:#1b5e20;margin-bottom:3px;font-size:10pt">DESTINATAIRE</div>
     <strong>${faEsc(commune.toUpperCase())}</strong><br>
     Représentée par ${titreMaire?faEsc(titreMaire)+', ':''}<strong>${nomMaire?faEsc(nomMaire):'le/la Maire'}</strong><br>
     ${adresse?faEsc(adresse)+'<br>':''}
-    ${siretCommune?'<span style="font-size:9pt;color:#555">SIRET : '+faEsc(siretCommune)+'</span>':'<span style="font-size:9pt;color:#e65100">⚠️ SIRET à renseigner</span>'}
+    ${siretCommune?'<span style="font-size:8.5pt;color:#555">SIRET : '+faEsc(siretCommune)+'</span>':'<span style="font-size:8.5pt;color:#e65100">⚠️ SIRET à renseigner</span>'}
   </td>
 </tr></table>
 
 <!-- MENTIONS LÉGALES -->
 <h2>Références</h2>
-<table class="mention" style="margin-bottom:16px"><tbody>
+<table class="mention" style="margin-bottom:10px"><tbody>
   <tr><td>Objet</td><td>${faEsc(objet)}</td></tr>
   ${ref?'<tr><td>Réf. contrat</td><td>'+faEsc(ref)+'</td></tr>':''}
   ${deliberation?'<tr><td>Délibération</td><td>'+faEsc(deliberation)+'</td></tr>':''}
@@ -17808,40 +17630,37 @@ td{border:1px solid #ddd}
 
 <!-- TABLEAU PRESTATIONS -->
 <h2>Détail des prestations</h2>
-<table style="margin-bottom:20px">
+<table style="margin-bottom:14px">
   <thead><tr>
-    <th style="min-width:200px">Désignation de la prestation</th>
+    <th style="min-width:180px">Désignation de la prestation</th>
     <th style="text-align:center;width:70px">Prix unit. HT</th>
     <th style="text-align:center;width:80px">Qté (heures)</th>
-    <th style="text-align:right;width:100px">Montant HT</th>
+    <th style="text-align:right;width:90px">Montant HT</th>
   </tr></thead>
   <tbody>${lignesHtml}</tbody>
 </table>
 
 <!-- TOTAUX -->
-<table style="border:none;width:100%;margin-bottom:24px"><tr>
+<table style="border:none;width:100%;margin-bottom:16px"><tr>
   <td style="border:none;vertical-align:top;width:55%">
     <h2>Modalités de règlement</h2>
-    <div class="mention" style="font-size:10pt">
-      <p>Règlement par mandat administratif à réception du titre de paiement.<br>
+    <div style="font-size:9.5pt;line-height:1.5">
+      <p style="margin:0 0 4px">Règlement par mandat administratif à réception du titre de paiement.<br>
       <strong>Transmission via Chorus Pro</strong> — portail public de facturation (Art. L.2192-5 CCP).</p>
     </div>
   </td>
   <td style="border:none;text-align:right;vertical-align:top;width:45%">
     <div class="total-box">
-      <div style="font-size:.95rem;font-weight:700;color:#1b5e20">Cette facture : ${f.totalH.toFixed(1)}&nbsp;h</div>
-      ${hDevis>0?'<div style="font-size:8.5pt;color:#2e7d32;margin-top:3px">Cumulé facturé : '+hCumulApres.toFixed(1)+' h / '+hDevis.toFixed(1)+' h au devis</div><div style="font-size:8.5pt;color:#2e7d32">Restant à facturer : '+hRestantes.toFixed(1)+' h</div>':''}
-      <div style="font-size:1.4rem;font-weight:900;color:#1b5e20;margin-top:6px">${(f.totalHT).toFixed(2).replace('.',',')}&nbsp;€&nbsp;HT</div>
-      <div style="border-top:1px solid #a5d6a7;margin-top:6px;padding-top:6px;font-size:9pt;color:#2e7d32">TVA non applicable<br>Art. 293 B du CGI</div>
+      <div style="font-size:.9rem;font-weight:700;color:#1b5e20">Cette facture : ${f.totalH.toFixed(1)}&nbsp;h</div>
+      ${hDevis>0?'<div style="font-size:8pt;color:#2e7d32;margin-top:2px">Cumulé facturé : '+hCumulApres.toFixed(1)+' h / '+hDevis.toFixed(1)+' h au devis</div><div style="font-size:8pt;color:#2e7d32">Restant : '+hRestantes.toFixed(1)+' h</div>':''}
+      <div style="font-size:1.3rem;font-weight:900;color:#1b5e20;margin-top:4px">${(f.totalHT).toFixed(2).replace('.',',')}&nbsp;€&nbsp;HT</div>
+      <div style="border-top:1px solid #a5d6a7;margin-top:4px;padding-top:4px;font-size:8.5pt;color:#2e7d32">TVA non applicable — Art. 293 B du CGI</div>
     </div>
   </td>
 </tr></table>
 
-<!-- PIED DE PAGE -->
-<div style="border-top:1px solid #ddd;padding-top:8px;text-align:center;font-size:8pt;color:#888">
-  COMMUNAUTÉ DE COMMUNES DE LA CLÉRY DU BETZ ET DE L'OUANNE &nbsp;·&nbsp; SIRET : 200 067 668 00018<br>
-  569 Route de Chatillon Coligny, 45220 Château-Renard &nbsp;·&nbsp; Service Hygiène et Sécurité
-</div>
+</td></tr></tbody>
+</table>
 </body></html>`;
 };
 
@@ -18821,7 +18640,7 @@ window.rsu_buildDashboard=function(selectedYear){
   <div class="hero-logo">🛡️</div>
   <h1>Guide d'utilisation <span>AuditIA</span></h1>
   <p>Conseiller de Prévention · 3CBO · Service Prévention</p>
-  <div class="hero-badge">Flux logique · v3.2</div>
+  <div class="hero-badge">Flux logique · v3.4</div>
 </div>
 
 <!-- INTRO -->
