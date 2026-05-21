@@ -10537,19 +10537,22 @@ function genReport(aiAnalysis) {
 
   let secHtml = '';
   allSec.forEach(sec => {
-    const annotated = sec.items.filter((_, i) => {
-      const e = clEtat[sec.id + '_' + i] || {};
+    // Fusionner items de base + items ajoutés dans la section
+    const _shAdded = (clEtat.__addedItems && clEtat.__addedItems[sec.id]) || [];
+    const _shAll = [
+      ...sec.items.map((it, i) => ({ it, pid: sec.id + '_' + i })),
+      ..._shAdded.map((txt, j) => ({ it: { l: txt }, pid: sec.id + '_custom_' + j }))
+    ];
+
+    const annotated = _shAll.filter(({ pid }) => {
+      const e = clEtat[pid] || {};
       if (e.deleted) return false;
-      // Only show items with an explicit status, excluding NV (non vérifié)
-      // NV and NA items don't appear in the report body (not verified / not applicable)
-      // Blank items are also excluded
       return e.s !== '' && e.s !== 'NV' && e.s !== 'NA';
     });
     if (!annotated.length) return;
 
-    const rows = annotated.map(it => {
-      const i = sec.items.indexOf(it);
-      const e = clEtat[sec.id + '_' + i] || { s: '', obs: '' };
+    const rows = annotated.map(({ it, pid }) => {
+      const e = clEtat[pid] || { s: '', obs: '' };
       if (e.s === 'C') { tOk++; tTot++; }
       else if (e.s === 'NC') { tNc++; tTot++; }
       else if (e.s === 'EC') { tEc++; tTot++; }
@@ -10566,7 +10569,7 @@ function genReport(aiAnalysis) {
       else { blockStyle = 'background:#f8f9fa;border-left:5px solid #bbb'; badge = ''; }
 
       // Photo: use data-pid marker — src injected at display time to avoid localStorage bloat
-      const pid_photo = sec.id + '_' + i;
+      const pid_photo = pid;
       const photoHtml = e.photo
         ? '<div style="margin-top:10px;max-width:320px">' +
           '<div style="position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:6px;border:1px solid #dde3ec">' +
@@ -10585,8 +10588,8 @@ function genReport(aiAnalysis) {
         '</div>';
     }).join('');
 
-    const secNc = annotated.filter((_, i) => { const e = clEtat[sec.id + '_' + sec.items.indexOf(annotated[i])] || {}; return e.s === 'NC'; }).length;
-    const secEc = annotated.filter((_, i) => { const e = clEtat[sec.id + '_' + sec.items.indexOf(annotated[i])] || {}; return e.s === 'EC'; }).length;
+    const secNc = annotated.filter(({ pid: p }) => (clEtat[p] || {}).s === 'NC').length;
+    const secEc = annotated.filter(({ pid: p }) => (clEtat[p] || {}).s === 'EC').length;
     const badge = secNc > 0 ? '<span style="background:#c62828;color:#fff;font-size:.65rem;padding:2px 7px;border-radius:10px;margin-left:8px">' + secNc + ' NC</span>' : '';
     const badgeEc = secEc > 0 ? '<span style="background:#f57c00;color:#fff;font-size:.65rem;padding:2px 7px;border-radius:10px;margin-left:4px">' + secEc + ' Écart</span>' : '';
 
