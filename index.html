@@ -383,12 +383,6 @@ textarea{min-height:70px;resize:vertical}
   color:#bbb;font-size:.75rem;cursor:pointer;margin-left:3px;transition:color .15s;flex:none}
 .cl-del-btn:hover{color:var(--r2);background:var(--r3)}
 .cl-item.deleted-soft{opacity:.35;pointer-events:none;border-left:3px solid #ccc}
-.cl-exception{background:#fff8e1;border-left:3px solid #ff8f00;border-radius:0 6px 6px 0;padding:6px 10px;margin:4px 0;display:flex;gap:6px;align-items:flex-start;flex-wrap:wrap}
-.cl-exception input{border:1px solid #ffcc02;border-radius:5px;padding:4px 7px;font-size:.78rem;font-family:inherit;background:#fff}
-.cl-exc-salle{width:120px;flex:none}
-.cl-exc-obs{flex:1;min-width:120px}
-.cl-exc-del{background:none;border:none;cursor:pointer;color:#999;font-size:.85rem;padding:2px 4px;flex:none}
-.cl-exc-btn{font-size:.7rem;padding:2px 7px;border-radius:5px;background:#fff3cd;border:1px solid #ffcc02;color:#7a5000;cursor:pointer;white-space:nowrap;flex:none}
 
 /* ── TABLEAU DE BORD ── */
 .db-kpi{background:var(--n4);border-radius:12px;padding:11px;text-align:center;box-shadow:var(--sh)}
@@ -698,7 +692,7 @@ textarea{min-height:70px;resize:vertical}
     <img src="data:image/jpeg;base64,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" alt="AuditIA">
     <div>
       <div class="htitle">AuditIA Prévention</div>
-      <div class="hsub">Conseiller de Prévention <span style="font-size:.65rem;opacity:.5;font-weight:400;letter-spacing:.5px">v3.7.0</span></div>
+      <div class="hsub">Conseiller de Prévention <span style="font-size:.65rem;opacity:.5;font-weight:400;letter-spacing:.5px">v3.5.16</span></div>
     </div>
   </div>
   <div class="hbadge" id="hbadge">0 communes</div>
@@ -841,10 +835,11 @@ textarea{min-height:70px;resize:vertical}
     <select id="cl-conv" onchange="onClConvChange()">
       <option value="">— Choisir —</option>
     </select>
-    <label>Bâtiment</label>
-    <select id="cl-salle-sel" onchange="onClSalleChange()">
-      <option value="">— Choisir un bâtiment —</option>
+    <label>Bâtiment / Local</label>
+    <select id="cl-salle-sel" onchange="onClSalleChange()" style="margin-bottom:5px">
+      <option value="">— Sélectionner un local enregistré —</option>
     </select>
+    <input id="cl-bat" placeholder="Ou saisir librement le bâtiment / local...">
     <div class="r2">
       <div><label>Date</label><input id="cl-date" type="date"></div>
       <div><label>Année construction</label><input id="cl-annee" type="number" placeholder="1985"></div>
@@ -903,7 +898,7 @@ textarea{min-height:70px;resize:vertical}
         <label>Version checklist</label>
         <select id="cl-version" onchange="buildCLSections()" style="font-size:.78rem">
           <option value="acfi">🔍 ACFI — CDG45 (défaut)</option>
-
+          <option value="base">📋 Ancienne version</option>
         </select>
       </div>
     </div>
@@ -991,7 +986,6 @@ textarea{min-height:70px;resize:vertical}
 </div>
 
 <!-- MODAL UT DUERP -->
-<div class="modal-bg" id="m-duerp-hist"><div class="modal"><div id="m-duerp-hist-content"></div></div></div>
 <div class="modal-bg" id="m-duerp-ut">
   <div class="modal">
     <div class="mtitle">
@@ -2086,10 +2080,10 @@ function convCard(cv, i) {
       </div>
       ${ms.length ? ms.map(m => missCard(m)).join('') : '<div style="font-size:.8rem;color:var(--n1);padding:4px 0 8px">Aucune mission</div>'}
 
-      <!-- Bâtiments avec taux de conformité -->
+      <!-- Salles / Locaux -->
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;margin-top:4px">
-        <div class="ssep" style="margin:0">🏢 Bâtiments</div>
-        <button class="btn btn-s btn-sm" onclick="openSalleModal('${cv.id}')">+ Bâtiment</button>
+        <div class="ssep" style="margin:0">🏫 Locaux</div>
+        <button class="btn btn-s btn-sm" onclick="openSalleModal('${cv.id}')">+ Local</button>
       </div>
       <div id="salles-${cv.id}">${renderSallesHtml(cv.id)}</div>
 
@@ -4183,30 +4177,14 @@ function initCheckPage() {
     if (pg) pg.insertBefore(banner, pg.firstChild.nextSibling);
   } else {
     initCL();
-    // Message : ouvrir depuis une mission + lister les checklists en cours
+    // Message : ouvrir depuis une mission
     const pg = g('pg-check');
     const existing = pg ? pg.querySelector('.cl-no-miss') : null;
     if (!existing && pg) {
-      // Checklists récentes non terminées
-      const _encours = checklists.filter(function(cl) {
-        const pts = Object.values(cl.etat||{}).filter(function(e){return e&&e.s;}).length;
-        return pts > 0;
-      }).slice(0, 5);
-      var _resumeHtml = '';
-      if (_encours.length) {
-        _resumeHtml = '<div style="margin-top:8px">'
-          + _encours.map(function(cl) {
-              const done = Object.values(cl.etat||{}).filter(function(e){return e&&e.s;}).length;
-              return '<button class="btn btn-p btn-sm" style="margin:3px;font-size:.78rem" '
-                + 'onclick="openChecklist(&quot;' + cl.id + '&quot;)">'
-                + '▶ ' + esc(cl.nom||cl.bat||'Checklist') + ' (' + done + ' pts)</button>';
-            }).join('')
-          + '</div>';
-      }
       const msg = document.createElement('div');
       msg.className = 'cl-no-miss ib blue no-print';
       msg.style.cssText = 'margin-bottom:12px;text-align:center';
-      msg.innerHTML = '📋 Ouvrez une checklist depuis une <b>fiche mission</b>' + _resumeHtml;
+      msg.innerHTML = '📋 Ouvrez une checklist depuis une <b>fiche mission</b>';
       pg.insertBefore(msg, pg.firstChild.nextSibling);
     }
   }
@@ -4254,31 +4232,23 @@ function populateClSalles(convId) {
   }
 }
 
-
-// Helper : récupère le nom du bâtiment sélectionné dans la checklist
-function getClBat() {
-  var sel = g('cl-salle-sel');
-  if (sel && sel.value) {
-    var s = salles.find(function(x){ return x.id === sel.value; });
-    if (s) return s.nom || '';
-  }
-  return '';
-}
 function onClSalleChange() {
   const sel = g('cl-salle-sel');
   if (!sel || !sel.value) return;
   const salle = salles.find(s => s.id === sel.value);
   if (!salle) return;
-  // Stocker l'ID du bâtiment sélectionné
-  window._clCurrentSalleId = salle.id;
-  // Auto-remplir le type de bâtiment selon le bâtiment
-  if (salle.type && g('cl-type')) {
-    var typeMap = { ecole: 'ecole', mairie: 'admin', creche: 'ecole', loisirs: 'ecole',
-                    cantine: 'ecole', gymnase: 'sport', bibliotheque: 'erp', autre: '' };
-    var mapped = typeMap[salle.type] || '';
-    if (mapped) { g('cl-type').value = mapped; onClTypeChange(); }
+  // Lier la salle au bâtiment
+  const batInput = g('cl-bat');
+  if (batInput) {
+    batInput.value = salle.batiment
+      ? salle.batiment + (salle.nom !== salle.batiment ? ' — ' + salle.nom : '')
+      : salle.nom;
   }
-  showToast('🏢 Bâtiment sélectionné : ' + salle.nom, 'success', 2000);
+  // Stocker l'ID de la salle pour liaison
+  window._clCurrentSalleId = salle.id;
+  // Pre-fill annee
+  if (salle.annee && g('cl-annee')) g('cl-annee').value = salle.annee;
+  showToast('📍 Bâtiment lié : ' + (salle.batiment || salle.nom), 'success', 2000);
 }
 
 function onClTypeChange() {
@@ -4367,57 +4337,8 @@ function clItemHtml(secId, i, it) {
     </div>
     <input class="cl-iobs" placeholder="Observation..." value="${esc(e.obs)}" oninput="setClObs('${pid}',this.value)">
     <div id="cl-photo-wrap-${pid}">${photoThumb}</div>
-    <div id="cl-exc-wrap-${pid}">${clExceptionsHtml(pid, e.exceptions||[])}</div>
-    <div style="text-align:right;margin-top:3px">
-      <button class="cl-exc-btn" onclick="clAddException('${pid}')">⚠️ + Exception salle</button>
-    </div>
   </div>`;
 }
-
-
-function clExceptionsHtml(pid, exceptions) {
-  if (!exceptions || !exceptions.length) return '';
-  return exceptions.map(function(ex, idx) {
-    var iEC = (ex.s === 'EC' || !ex.s) ? ' selected' : '';
-    var iNC = ex.s === 'NC' ? ' selected' : '';
-    var eSalle = esc(ex.salle || '');
-    var eObs = esc(ex.obs || '');
-    return '<div class="cl-exception" id="cl-exc-' + pid + '-' + idx + '">'
-      + '<select style="border:1px solid #ffcc02;border-radius:5px;padding:3px 5px;font-size:.75rem;background:#fff;color:#7a5000" '
-      + 'onchange="clUpdateException(&quot;' + pid + '&quot;,' + idx + ',&quot;s&quot;,this.value)">'
-      + '<option value="EC"' + iEC + '>⚠️ Écart</option>'
-      + '<option value="NC"' + iNC + '>❌ Non conforme</option></select>'
-      + '<input class="cl-exc-salle" placeholder="Salle / Local" value="' + eSalle + '" '
-      + 'oninput="clUpdateException(&quot;' + pid + '&quot;,' + idx + ',&quot;salle&quot;,this.value)">'
-      + '<input class="cl-exc-obs" placeholder="Observation détaillée..." value="' + eObs + '" '
-      + 'oninput="clUpdateException(&quot;' + pid + '&quot;,' + idx + ',&quot;obs&quot;,this.value)">'
-      + '<button class="cl-exc-del" onclick="clDeleteException(&quot;' + pid + '&quot;,' + idx + ')" title="Supprimer">✕</button>'
-      + '</div>';
-  }).join('');
-}
-
-window.clAddException = function(pid) {
-  if (!clEtat[pid]) clEtat[pid] = { s: '', obs: '' };
-  if (!clEtat[pid].exceptions) clEtat[pid].exceptions = [];
-  clEtat[pid].exceptions.push({ salle: '', obs: '', s: 'EC' });
-  autoSaveCL();
-  var wrap = g('cl-exc-wrap-' + pid);
-  if (wrap) wrap.innerHTML = clExceptionsHtml(pid, clEtat[pid].exceptions);
-};
-
-window.clUpdateException = function(pid, idx, field, val) {
-  if (!clEtat[pid] || !clEtat[pid].exceptions) return;
-  clEtat[pid].exceptions[idx][field] = val;
-  autoSaveCL();
-};
-
-window.clDeleteException = function(pid, idx) {
-  if (!clEtat[pid] || !clEtat[pid].exceptions) return;
-  clEtat[pid].exceptions.splice(idx, 1);
-  autoSaveCL();
-  var wrap = g('cl-exc-wrap-' + pid);
-  if (wrap) wrap.innerHTML = clExceptionsHtml(pid, clEtat[pid].exceptions);
-};
 
 function clAddCustomItem(secId) {
   const txt = prompt('Intitulé du point à ajouter dans cette section :');
@@ -4457,19 +4378,19 @@ function deleteClItem(pid) {
 }
 
 function restoreDeletedItems() {
-  var count = 0;
-  Object.keys(clEtat).forEach(function(pid) {
-    if (clEtat[pid] && clEtat[pid].deleted) {
+  Object.keys(clEtat).forEach(pid => {
+    if (clEtat[pid].deleted) {
       delete clEtat[pid].deleted;
-      count++;
+      const el = g('cli-' + pid);
+      if (el) el.style.display = '';
     }
   });
-  if (count === 0) { showToast('Aucun point masqué', 'default'); return; }
-  // Reconstruire entièrement les sections (les divs masqués n'existent plus dans le DOM)
-  buildCLSections();
   majClProg();
   autoSaveCL();
-  showToast(count + ' point' + (count > 1 ? 's' : '') + ' restauré' + (count > 1 ? 's' : ''), 'success');
+  // Rebuild all badges
+  let allSec = [...CL_BASE];
+  if (g('cl-type') && g('cl-type').value === 'ecole') allSec = [...allSec, ...CL_JEUNE];
+  allSec.forEach(sec => majClBadge(sec.id));
 }
 function setClObs(pid, val) {
   clEtat[pid].obs = val;
@@ -4724,7 +4645,7 @@ function addPiece() {
 // SAVE CL
 function saveCL() {
   const convId = g('cl-conv').value;
-  const bat = getClBat();
+  const bat = g('cl-bat').value.trim();
   if (!convId) { showToast('Sélectionnez une convention avant de sauvegarder.', 'error'); return; }
   if (!bat) showToast('⚠️ Bâtiment non renseigné — sauvegarde effectuée sans nom de bâtiment', 'default', 4000);
   const missId = g('cl-miss-id').value || null;
@@ -4733,8 +4654,7 @@ function saveCL() {
   Object.keys(clEtat).forEach(pid => {
     const e = clEtat[pid];
     etatSnap[pid] = { s: e.s, obs: e.obs, deleted: e.deleted,
-      extincteurs: e.extincteurs, hasPhoto: !!e.photo,
-      exceptions: e.exceptions || [] };
+      extincteurs: e.extincteurs, hasPhoto: !!e.photo };
   });
   const snapshot = {
     id: uid(), convId, bat, missId,
@@ -4810,8 +4730,6 @@ function openChecklist(clId) {
   if (!cl) return;
   appLog('action', 'Checklist ouverte', { id: clId, nom: cl.nom });
   clActiveId = clId;
-  // Effacer l'autosave immédiatement pour que initCheckPage ne boucle pas
-  clearClAutosave();
   clEtat   = JSON.parse(JSON.stringify(cl.etat || {}));
   clAgents = JSON.parse(JSON.stringify(cl.agents || []));
   clPieces = JSON.parse(JSON.stringify(cl.pieces || []));
@@ -4830,7 +4748,7 @@ function openChecklist(clId) {
     convs.forEach(function(cv) { const o = document.createElement('option'); o.value = cv.id; o.textContent = cv.commune; sel.appendChild(o); });
     sel.value = cl.convId || '';
   }
-  // bat restauré via cl-salle-sel
+  if (g('cl-bat'))     g('cl-bat').value     = cl.bat || '';
   // Détection auto : si les clés etat sont ACFI (v2_*) → forcer version acfi
   const _hasAcfiKeys = Object.keys(cl.etat || {}).some(k => k.startsWith('v2_'));
   const _resolvedVer = _hasAcfiKeys ? 'acfi' : (cl.version || 'acfi');
@@ -4853,8 +4771,6 @@ function openChecklist(clId) {
     if (g('cl-version')) g('cl-version').value = _resolvedVer || 'acfi';
     buildCLSections();
     majClProg();
-    // Persister l'état initialisé (buildCLSections ajoute les pid manquants à clEtat)
-    autoSaveCL();
   }, 0);
   setTimeout(function() {
     const pg = g('pg-check');
@@ -4931,7 +4847,7 @@ function exportClToGDoc(clId) {
   if (g('cl-type')) g('cl-type').value = cl.type || '';
   if (g('cl-annee')) g('cl-annee').value = cl.annee || '';
   if (g('cl-date')) g('cl-date').value = cl.date || '';
-  // bat restauré via cl-salle-sel
+  if (g('cl-bat')) g('cl-bat').value = cl.bat || '';
   exportClGDoc();
 }
 
@@ -5104,13 +5020,6 @@ function buildCLSections() {
 
   if (type === 'ecole') renderClPieces();
   majClProg();
-  // Persister les pid nouvellement initialisés si checklist active
-  if (clActiveId && !window._clBcsSaveTimer) {
-    window._clBcsSaveTimer = setTimeout(function() {
-      window._clBcsSaveTimer = null;
-      if (clActiveId) autoSaveCL();
-    }, 800);
-  }
 }
 
 window.deleteClSection = function(sid) {
@@ -5679,7 +5588,7 @@ function previewImport() {
       // Charger SheetJS si besoin puis extraire texte CSV
       const loadXLSX = window.XLSX ? Promise.resolve() : new Promise((res, rej) => {
         const s = document.createElement('script');
-        s.src = 'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js';
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
         s.onload = res; s.onerror = rej; document.head.appendChild(s);
       });
       loadXLSX.then(() => {
@@ -6280,7 +6189,7 @@ function showAIForm() {
 
 function buildChecklistSummary() {
   // Build a structured text summary of the checklist for the AI prompt
-  const bat = getClBat() || 'Bâtiment non précisé';
+  const bat = g('cl-bat').value.trim() || 'Bâtiment non précisé';
   const date = g('cl-date').value;
   const annee = g('cl-annee').value;
   const typeERP = g('cl-type').value;
@@ -6451,7 +6360,7 @@ function clearChatMsgs() {
 function getChatPageContext() {
   const page = chatCurrentPage;
   if (page === 'check') {
-    const bat = getClBat();
+    const bat = g('cl-bat') ? g('cl-bat').value.trim() : '';
     const convId = g('cl-conv') ? g('cl-conv').value : '';
     const cv = convs.find(c => c.id === convId);
     return {
@@ -6647,7 +6556,7 @@ async function callChatAI(userMessage, loadingEl) {
     return;
   }
   // Build context: current CL state summary
-  const bat = getClBat() || 'bâtiment non précisé';
+  const bat = g('cl-bat').value.trim() || 'bâtiment non précisé';
   const convId = g('cl-conv').value;
   const cv = convs.find(c => c.id === convId);
 
@@ -7884,7 +7793,7 @@ function handlePhotoCapture(input) {
       pid, ts: Date.now(),
       convId: _convId,
       commune: _cv ? _cv.commune : '',
-      batiment: getClBat()
+      batiment: g('cl-bat') ? g('cl-bat').value.trim() : ''
     });
 
     // Update DOM without full re-render
@@ -8130,9 +8039,20 @@ async function gdriveFindFile() {
     "https://www.googleapis.com/drive/v3/files?q=name%3D'" + GDRIVE_FILE_NAME + "'+and+trashed%3Dfalse&spaces=drive&fields=files(id,name,modifiedTime)",
     { headers: { Authorization: 'Bearer ' + gdriveToken } }
   );
+  if (!resp.ok) {
+    // Propager les erreurs auth au lieu de les avaler silencieusement
+    if (resp.status === 401) {
+      gdriveToken = null; gdriveUserEmail = '';
+      try { const s = JSON.parse(localStorage.getItem(GDRIVE_KEY)||'{}'); s.token=null; s.tokenExpiry=0; localStorage.setItem(GDRIVE_KEY, JSON.stringify(s)); } catch(e) {}
+      gdriveUpdateUI();
+      throw new Error('SESSION_EXPIRED');
+    }
+    throw new Error('HTTP_' + resp.status);
+  }
   const data = await resp.json();
   if (data.files && data.files.length > 0) {
     gdriveFileId = data.files[0].id;
+    gdriveSaveState(); // Persister le fileId trouvé
     return data.files[0];
   }
   return null;
@@ -8292,6 +8212,43 @@ async function gdriveSync(force) {
 
 async function gdriveRestore() {
   if (!gdriveToken) { alert("Connectez d'abord Google Drive."); return; }
+
+  // ── Vérification du token AVANT de demander confirmation ──
+  gdriveSetStatus('spin', '🔄 Vérification de la session…');
+  const tokenOk = await gdriveVerifyToken();
+  if (!tokenOk) {
+    // Token expiré : proposer reconnexion immédiate
+    gdriveSetStatus('err', '❌ Session expirée — reconnexion requise');
+    const reconnect = await new Promise(res => {
+      customConfirm(
+        'Votre session Google est expirée.\nVoulez-vous vous reconnecter pour restaurer ?',
+        () => res(true), { title: 'Session expirée', confirmText: 'Se reconnecter', danger: false,
+          onCancel: () => res(false) }
+      );
+    });
+    if (!reconnect) { gdriveSetStatus('err', '❌ Session expirée — reconnectez-vous'); return; }
+    // Lancer la reconnexion OAuth et attendre le token
+    await new Promise((res) => {
+      const client = google.accounts.oauth2.initTokenClient({
+        client_id: GDRIVE_CLIENT_ID, scope: GDRIVE_SCOPE,
+        callback: async (r) => {
+          if (!r.error) {
+            gdriveToken = r.access_token;
+            try {
+              const ui = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', { headers: { Authorization: 'Bearer ' + gdriveToken } });
+              const ud = await ui.json(); gdriveUserEmail = ud.email || '';
+            } catch(e) {}
+            gdriveSaveState(); gdriveUpdateUI();
+          } else { gdriveToken = null; }
+          res();
+        }
+      });
+      client.requestAccessToken();
+    });
+    if (!gdriveToken) { gdriveSetStatus('err', '❌ Reconnexion annulée'); return; }
+  }
+  gdriveSetStatus('ok', '✅ Session active');
+
   customConfirm("Restaurer la dernière sauvegarde Drive ?\nToutes les données locales seront remplacées.", async () => {
 
   gdriveSetStatus('spin', '🔄 Restauration en cours...');
@@ -8299,16 +8256,32 @@ async function gdriveRestore() {
   if (fab) fab.classList.add('spinning');
 
   try {
-    if (!gdriveFileId) {
-      const f = await gdriveFindFile();
-      if (!f) { gdriveSetStatus('err', '❌ Aucun fichier trouvé sur Drive'); return; }
-    }
+    // Toujours re-chercher le fichier pour éviter un fileId périmé
+    const f = await gdriveFindFile();
+    if (!f) { gdriveSetStatus('err', '❌ Aucun fichier de sauvegarde trouvé sur Drive'); return; }
 
     const resp = await fetch(
       'https://www.googleapis.com/drive/v3/files/' + gdriveFileId + '?alt=media',
       { headers: { Authorization: 'Bearer ' + gdriveToken } }
     );
-    if (!resp.ok) { gdriveSetStatus('err', '❌ Erreur lecture Drive : ' + resp.status); return; }
+
+    if (!resp.ok) {
+      // Détailler l'erreur selon le code HTTP
+      if (resp.status === 401) {
+        gdriveToken = null; gdriveUpdateUI();
+        gdriveSetStatus('err', '❌ Session expirée — reconnectez-vous');
+        showToast('Session Google expirée. Reconnectez Drive et réessayez.', 'error', 6000);
+      } else if (resp.status === 403) {
+        // Réinitialiser le fileId en cache pour forcer une re-recherche
+        gdriveFileId = null;
+        try { const s = JSON.parse(localStorage.getItem(GDRIVE_KEY)||'{}'); delete s.fileId; localStorage.setItem(GDRIVE_KEY, JSON.stringify(s)); } catch(e) {}
+        gdriveSetStatus('err', '❌ Accès refusé (403) — réessayez dans quelques secondes');
+        showToast('❌ Accès Drive refusé. Déconnectez et reconnectez Google Drive.', 'error', 7000);
+      } else {
+        gdriveSetStatus('err', '❌ Erreur Drive : HTTP ' + resp.status);
+      }
+      return;
+    }
 
     const data = await resp.json();
     if (!data.version || !data.conventions) { gdriveSetStatus('err', '❌ Fichier invalide'); return; }
@@ -8345,7 +8318,12 @@ async function gdriveRestore() {
     const dateLabel = data.exportDate ? new Date(data.exportDate).toLocaleString('fr-FR') : '?';
     showToast('✅ Données restaurées — ' + dateLabel, 'success', 3500);
   } catch(e) {
-    gdriveSetStatus('err', '❌ Erreur : ' + e.message);
+    if (e.message === 'SESSION_EXPIRED') {
+      gdriveSetStatus('err', '❌ Session expirée — reconnectez-vous');
+      showToast('Session Google expirée. Reconnectez Drive et réessayez.', 'error', 6000);
+    } else {
+      gdriveSetStatus('err', '❌ Erreur : ' + e.message);
+    }
   } finally {
     if (fab) fab.classList.remove('spinning');
   }
@@ -8375,8 +8353,7 @@ function autoSaveCL() {
   Object.keys(clEtat).forEach(pid => {
     const e = clEtat[pid];
     etatSnap[pid] = { s: e.s, obs: e.obs, deleted: e.deleted,
-      extincteurs: e.extincteurs, hasPhoto: !!e.photo,
-      exceptions: e.exceptions || [] };
+      extincteurs: e.extincteurs, hasPhoto: !!e.photo };
   });
   checklists[idx] = {
     ...checklists[idx],
@@ -8419,7 +8396,7 @@ function autoRestoreCL() {
     }
     // Ancien format (rétro-compat)
     if (data.convId && g('cl-conv')) g('cl-conv').value = data.convId;
-    // bat restauré via cl-salle-sel
+    if (data.bat && g('cl-bat')) g('cl-bat').value = data.bat;
     if (data.date && g('cl-date')) g('cl-date').value = data.date;
     if (data.annee && g('cl-annee')) g('cl-annee').value = data.annee;
     if (data.missId && g('cl-miss-id')) g('cl-miss-id').value = data.missId;
@@ -8478,7 +8455,7 @@ function openVisiteFromSaved(visiteId) {
     });
     sel.value = v.convId || '';
   }
-  // bat restauré via cl-salle-sel
+  if (g('cl-bat'))    g('cl-bat').value    = v.bat || '';
   if (g('cl-date'))   g('cl-date').value   = v.date || today();
   if (g('cl-annee'))  g('cl-annee').value  = v.annee || '';
   if (g('cl-type'))   g('cl-type').value   = v.type || '';
@@ -8919,45 +8896,22 @@ const SALLE_TYPES = {
 };
 
 function renderSallesHtml(convId) {
-  const sl = salles.filter(function(s) { return s.convId === convId; });
-  if (!sl.length) return '<div style="font-size:.78rem;color:var(--n1);padding:2px 0 8px">Aucun bâtiment enregistré — cliquez + Bâtiment</div>';
-  return sl.map(function(s) {
-    // Calculer taux de conformité depuis les checklists liées à ce bâtiment
-    var clsBat = checklists.filter(function(cl) { return cl.convId === convId && cl.salleId === s.id; });
-    var conformHtml = '';
-    if (clsBat.length) {
-      // Prendre la checklist la plus récente
-      var latestCl = clsBat.reduce(function(a, b) { return (b.ts||0) > (a.ts||0) ? b : a; });
-      var etat = latestCl.etat || {};
-      var pts = Object.values(etat).filter(function(e) { return e && e.s; });
-      var ok = pts.filter(function(e) { return e.s === 'C'; }).length;
-      var nc = pts.filter(function(e) { return e.s === 'NC'; }).length;
-      var ec = pts.filter(function(e) { return e.s === 'EC'; }).length;
-      var tot = pts.length;
-      var pct = tot ? Math.round(ok / tot * 100) : 0;
-      var color = pct >= 80 ? '#2e7d32' : pct >= 60 ? '#f57c00' : '#c62828';
-      var dateStr = latestCl.date ? ' · ' + latestCl.date : '';
-      conformHtml = '<div style="margin-top:5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">'
-        + '<div style="background:' + color + ';color:#fff;border-radius:6px;padding:2px 8px;font-size:.72rem;font-weight:700">' + pct + '% conformité</div>'
-        + (nc ? '<span style="background:#ffebee;color:#c62828;border-radius:4px;padding:1px 6px;font-size:.7rem">' + nc + ' NC</span>' : '')
-        + (ec ? '<span style="background:#fff8e1;color:#f57c00;border-radius:4px;padding:1px 6px;font-size:.7rem">' + ec + ' écart</span>' : '')
-        + '<span style="font-size:.68rem;color:var(--n1)">' + clsBat.length + ' visite' + (clsBat.length > 1 ? 's' : '') + dateStr + '</span>'
-        + '</div>';
-    } else {
-      conformHtml = '<div style="font-size:.7rem;color:var(--n1);margin-top:3px">Aucune visite enregistrée</div>';
-    }
-    return '<div class="miss" style="margin-bottom:5px;border-left-color:var(--b2)">'
-      + '<div class="miss-head">'
-      + '<div style="flex:1">'
-      + '<div class="miss-title">🏢 ' + esc(s.nom) + (s.type ? ' <span style="font-size:.7rem;font-weight:400;color:var(--n1)">(' + (SALLE_TYPES[s.type]||s.type) + ')</span>' : '') + '</div>'
-      + conformHtml
-      + '</div>'
-      + '<div style="display:flex;gap:4px;flex:none">'
-      + '<button class="btn btn-s btn-sm" onclick="openSalleModal(&quot;' + s.convId + '&quot;,&quot;' + s.id + '&quot;)">✏️</button>'
-      + '<button class="btn btn-d btn-sm" onclick="deleteSalle(&quot;' + s.id + '&quot;)">🗑️</button>'
-      + '</div>'
-      + '</div></div>';
-  }).join('');
+  const sl = salles.filter(s => s.convId === convId);
+  if (!sl.length) return '<div style="font-size:.78rem;color:var(--n1);padding:2px 0 8px">Aucun local enregistré</div>';
+  return sl.map(s => `
+    <div class="miss" style="margin-bottom:5px;border-left-color:var(--b2)">
+      <div class="miss-head">
+        <div>
+          <div class="miss-title">${SALLE_TYPES[s.type]||s.type} — ${esc(s.nom)}</div>
+          <div class="miss-meta">${s.batiment ? '🏗️ ' + esc(s.batiment) + ' · ' : ''}${s.surface ? s.surface + ' m² · ' : ''}${s.capacite ? s.capacite + ' pers.' : ''}</div>
+          ${s.commentaire ? '<div style="font-size:.75rem;color:var(--n1);margin-top:3px;font-style:italic">' + esc(s.commentaire.substring(0,80)) + (s.commentaire.length>80?'…':'') + '</div>' : ''}
+        </div>
+        <div style="display:flex;gap:4px;flex:none">
+          <button class="btn btn-s btn-sm" onclick="openSalleModal('${s.convId}','${s.id}')">✏️</button>
+          <button class="btn btn-d btn-sm" onclick="deleteSalle('${s.id}')">🗑️</button>
+        </div>
+      </div>
+    </div>`).join('');
 }
 
 function openSalleModal(convId, salleId = null) {
@@ -8969,7 +8923,7 @@ function openSalleModal(convId, salleId = null) {
   if (salleId) {
     const s = salles.find(x => x.id === salleId);
     if (!s) return;
-    g('m-salle-title').textContent = 'Modifier le bâtiment';
+    g('m-salle-title').textContent = 'Modifier le local';
     g('sl-id').value = salleId;
     g('sl-nom').value = s.nom || '';
     g('sl-type').value = s.type || 'autre';
@@ -8981,10 +8935,10 @@ function openSalleModal(convId, salleId = null) {
     if(_ph&&_pp){_pp.innerHTML='<img src="'+_ph+'" style="width:100%;height:100%;object-fit:cover;border-radius:7px">';if(_pd)_pd.style.display='inline-flex';}
     if(_qb)_qb.style.display='inline-flex';
   } else {
-    g('m-salle-title').textContent = 'Nouveau bâtiment';
+    g('m-salle-title').textContent = 'Nouveau local / salle';
     g('sl-id').value = '';
-    ['sl-nom'].forEach(function(id) { if (g(id)) g(id).value = ''; });
-    if (g('sl-type')) g('sl-type').value = 'ecole';
+    ['sl-nom', 'sl-surface', 'sl-capacite', 'sl-batiment', 'sl-commentaire'].forEach(id => g(id).value = '');
+    g('sl-type').value = 'classe';
   }
   om('m-salle');
 }
@@ -9568,7 +9522,7 @@ Fais correspondre au mieux les points du rapport. Omets les points non mentionn�
         c.commune.toLowerCase().includes((meta.commune || '').toLowerCase()));
       if (convMatch && g('cl-conv')) g('cl-conv').value = convMatch.id;
     }
-    // bat restauré via cl-salle-sel
+    if (meta.batiment && g('cl-bat')) g('cl-bat').value = meta.batiment;
     if (meta.date && g('cl-date')) g('cl-date').value = meta.date;
     if (meta.annee && g('cl-annee')) g('cl-annee').value = meta.annee;
 
@@ -10003,19 +9957,22 @@ window.exportFormationsDocx = async function(convId) {
   if (!agsList.length) { showToast('Aucun agent pour cette convention', 'error'); return; }
 
   showToast('Génération du document Word…', 'default', 3000);
-  try {
 
   // Load docx lib
   if (!window.docx) {
-    await new Promise(function(res, rej) {
-      var s = document.createElement('script');
-      s.src = 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs';
-      s.onload = res;
-      s.onerror = function() { rej(new Error('Librairie Word indisponible — vérifiez votre connexion')); };
-      document.head.appendChild(s);
-    });
+    if (window.loadLibCached) {
+      await window.loadLibCached('cache-docx', 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js');
+    } else {
+      await new Promise(function(res, rej) {
+        var s = document.createElement('script');
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js';
+        s.onload = res;
+        s.onerror = function() { rej(new Error('CDN indisponible')); };
+        document.head.appendChild(s);
+      });
+    }
   }
-  if (!window.docx) throw new Error('Librairie Word non disponible');
+  if (!window.docx) throw new Error('Librairie Word non disponible (vérifiez la connexion)');
 
   const D = window.docx;
   const {
@@ -10184,17 +10141,9 @@ window.exportFormationsDocx = async function(convId) {
 
   const blob = await Packer.toBlob(doc);
   const fname = cv.commune.replace(/\s+/g,'_') + '_Formations_' + dateStr + '.docx';
-  const url = URL.createObjectURL(blob);
-  const a2 = document.createElement('a');
-  a2.href = url; a2.download = fname;
-  document.body.appendChild(a2);
-  a2.click();
-  setTimeout(function() { document.body.removeChild(a2); URL.revokeObjectURL(url); }, 2000);
+  const a2 = document.createElement('a'); a2.href = URL.createObjectURL(blob);
+  a2.download = fname; a2.click();
   showToast('✅ Document Word généré : ' + fname, 'success', 4000);
-  } catch(err) {
-    console.error('[AuditIA] Export Word formations erreur:', err);
-    showToast('❌ Erreur : ' + (err.message || String(err)), 'error', 8000);
-  }
 };
 
 window.renderFormationsConvention = function(convId) {
@@ -10462,7 +10411,7 @@ async function genAIRapport() {
     prefet: "l'inspection du travail"
   };
 
-  const bat = getClBat();
+  const bat = g('cl-bat') ? g('cl-bat').value.trim() : '';
   const convId = g('cl-conv') ? g('cl-conv').value : '';
   const cv = convs.find(c => c.id === convId);
   const dateVisite = g('cl-date') ? g('cl-date').value : today();
@@ -10551,41 +10500,6 @@ Générer uniquement le HTML du corps (sans html/head/body). Factuel, bienveilla
     if (el) el.textContent = loadingMsgs[msgIdx];
   }, 1800);
 
-  // Récupérer les photos des points NC/EC depuis IndexedDB
-  const cl = checklists.find(function(x){ return x.id === clActiveId; });
-  const photoPrefix = cl ? clPhotoPrefix(cl) : ('cl_' + clActiveId + '_');
-  const contentBlocks = [];
-  contentBlocks.push({ type: 'text', text: prompt });
-
-  // Collecter les pids NC/EC et vérifier si une photo existe dans IndexedDB
-  const ncPids = Object.keys(clEtat).filter(function(pid) {
-    const e = clEtat[pid];
-    return e && (e.s === 'NC' || e.s === 'EC' || e.s === 'R');
-  });
-  // Tester chaque pid dans IDB (max 10 photos pour ne pas dépasser les limites API)
-  const photoPids = [];
-  for (var _ti = 0; _ti < ncPids.length && photoPids.length < 10; _ti++) {
-    const _tpid = ncPids[_ti];
-    const _tphoto = await idbGetPhoto(photoPrefix + _tpid).catch(function(){ return null; });
-    if (_tphoto) photoPids.push(_tpid);
-  }
-
-  for (var _pi = 0; _pi < photoPids.length; _pi++) {
-    const _pid = photoPids[_pi];
-    const _photo = await idbGetPhoto(photoPrefix + _pid).catch(function(){ return null; });
-    if (_photo && typeof _photo === 'string' && _photo.startsWith('data:image')) {
-      const _mtype = _photo.match(/data:(image\/[a-z]+);/);
-      const _b64 = _photo.split(',')[1];
-      if (_b64 && _mtype) {
-        contentBlocks.push({
-          type: 'image',
-          source: { type: 'base64', media_type: _mtype[1], data: _b64 }
-        });
-        contentBlocks.push({ type: 'text', text: '(Photo du point : ' + _pid + ')' });
-      }
-    }
-  }
-
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
@@ -10593,7 +10507,7 @@ Générer uniquement le HTML du corps (sans html/head/body). Factuel, bienveilla
       body: JSON.stringify({
         model: 'claude-sonnet-4-5',
         max_tokens: 4096,
-        messages: [{ role: 'user', content: contentBlocks }]
+        messages: [{ role: 'user', content: prompt }]
       })
     });
 
@@ -10652,7 +10566,7 @@ function insertAIIntoRapport() {
 // ═══════════════════════════════════════════
 function genReport(aiAnalysis) {
   const convId = g('cl-conv').value;
-  const bat = getClBat();
+  const bat = g('cl-bat').value.trim();
   const date = g('cl-date').value;
   const annee = g('cl-annee').value;
   const typeERP = g('cl-type').value;
@@ -10740,23 +10654,10 @@ function genReport(aiAnalysis) {
           '</div>'
         : '';
 
-      // Exceptions de salle
-      const excHtml = (e.exceptions || []).map(function(ex) {
-        const exBadge = ex.s === 'NC'
-          ? '<span style="background:#c62828;color:#fff;font-size:.68rem;padding:1px 6px;border-radius:3px;margin-right:6px;flex:none">❌ NC</span>'
-          : '<span style="background:#f57c00;color:#fff;font-size:.68rem;padding:1px 6px;border-radius:3px;margin-right:6px;flex:none">⚠️ Écart</span>';
-        return '<div style="background:#fff8e1;border-left:3px solid #ff8f00;padding:5px 10px;margin-top:5px;border-radius:0 4px 4px 0;font-size:.8rem;display:flex;align-items:flex-start;gap:6px">'
-          + exBadge
-          + '<div><strong>' + esc(ex.salle || 'Salle non précisée') + '</strong>'
-          + (ex.obs ? ' — ' + esc(ex.obs) : '')
-          + '</div></div>';
-      }).join('');
-
       return '<div style="' + blockStyle + ';padding:12px 14px;margin-bottom:8px;border-radius:0 6px 6px 0">' +
         badge +
         '<div style="font-weight:700;font-size:.85rem;margin-bottom:4px">' + esc(it.l) + '</div>' +
         (e.obs ? '<div style="font-size:.82rem;color:#333;margin-top:4px">' + esc(e.obs) + '</div>' : '') +
-        excHtml +
         photoHtml +
         '</div>';
     }).join('');
@@ -11077,11 +10978,11 @@ async function exportRapportDocx() {
   // Charger docx si besoin
   if (!window.docx) {
     if (window.loadLibCached) {
-      await window.loadLibCached('cache-docx', 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs');
+      await window.loadLibCached('cache-docx', 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js');
     } else {
       await new Promise(function(res, rej) {
         var s = document.createElement('script');
-        s.src = 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs';
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js';
         s.onload = res;
         s.onerror = function() { rej(new Error('CDN indisponible')); };
         document.head.appendChild(s);
@@ -11224,9 +11125,7 @@ async function exportRapportDocx() {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = filename;
-  document.body.appendChild(a);
   a.click();
-  setTimeout(function() { document.body.removeChild(a); URL.revokeObjectURL(a.href); }, 2000);
   URL.revokeObjectURL(a.href);
 
   if (btn) { btn.textContent = '💾 Word'; btn.disabled = false; }
@@ -11596,7 +11495,7 @@ function batNewChecklist() {
     g('cl-conv').value = cv.id;
     onClConvChange();
   }
-  // bat restauré via cl-salle-sel
+  if (g('cl-bat')) g('cl-bat').value = batFicheCurrent.batiment;
   go('check', null);
 }
 
@@ -12503,7 +12402,7 @@ window.slGenerateQR=async function(){
   const salleId=g('sl-id')?g('sl-id').value:'';
   if(!salleId){showToast('Enregistrez d’abord la salle','default');return;}
   if(!window.QRCode){
-    await new Promise(function(res,rej){const s=document.createElement('script');s.src='https://unpkg.com/qrcodejs@1.0.0/qrcode.min.js';s.onload=res;s.onerror=rej;document.head.appendChild(s);});
+    await new Promise(function(res,rej){const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';s.onload=res;s.onerror=rej;document.head.appendChild(s);});
   }
   const baseUrl=location.href.split('?')[0];
   const container=g('sl-qr-canvas');
@@ -13537,239 +13436,98 @@ async function duerp_generateRisksForCreatedUTs(uts) {
   if (!apiKey) { showToast('Clé API manquante', 'error', 4000); return; }
   var convId = duerp_convId;
   var d = duerp_getCD(convId);
+  var BATCH = 3;
   var totalInserted = 0;
-
-  // ── TABLE DE NORMALISATION danger → famille CNRACL ──────────────────
-  var NORM_TABLE = [
-    { kw: ['bruit','sonorit','sonore'], label: '16. Bruit' },
-    { kw: ['chute de hauteur','hauteur','escalier','nacelle','echelle','escabeau'], label: '3. Chute de hauteur' },
-    { kw: ['chute de plain','plain-pied','plain pied','glissade'], label: '2. Chute de plain-pied' },
-    { kw: ["chute d'objet","chute objet","effondrement","chute de pierre"], label: "4. Chute d'objet / Effondrement" },
-    { kw: ['circulation','routier','trajet','deplacement en voiture','vehicule','bus','minibus'], label: '1. Déplacements' },
-    { kw: ['incendie','explosion','feu','atex'], label: '15. Incendie / Explosion' },
-    { kw: ['rps','psychosocial','stress','burnout','agression','tension','violence','pression','surcharge','isolement'], label: '19. Risques psychosociaux' },
-    { kw: ['mecanique','mecaniq','perceuse','touret','compresseur','motoculteur','debroussailleuse'], label: '11. Risque mécanique' },
-    { kw: ['chimique','chimie','phyto','essence','gazoil','gnr','solvant','white spirit','peinture','produit'], label: '6. Agents chimiques' },
-    { kw: ['biologique','bio','infecti','guep','frelon','piqure','contamination'], label: '8. Agents biologiques' },
-    { kw: ['manutention','port de charge','deplacemen','charge lourde'], label: '7. Manutention manuelle' },
-    { kw: ['posture','penible','tms','tendinite','dos','epaule','rachis'], label: '9. Postures de travail' },
-    { kw: ['vibration','vibrante','vibreur'], label: '10. Vibrations' },
-    { kw: ['condition de travail','vestiaire','eclairage','ventilation','ambiance'], label: '22. Conditions de travail' },
-    { kw: ['travail isol','isol'], label: '21. Travail isolé' },
-    { kw: ["conduite d'engin",'engin','tracteur','telescopique','minipelle','autoportee'], label: "5. Conduite d'engins" },
-    { kw: ['electrique','electricite','installation elect'], label: '14. Installations électriques' },
-    { kw: ['ecran','informatique','ordinateur'], label: '13. Travail sur écran' },
-    { kw: ['thermique','chaleur','froid','temperature'], label: '17. Ambiances thermiques' },
-    { kw: ['entreprise exterieure','coactivite','sous-traitant','prestataire'], label: '24. Coactivité / Entreprises extérieures' },
-    { kw: ['rythme','cadence','organisation'], label: '19. Risques psychosociaux' },
-  ];
-
-  function normaliserDanger(danger) {
-    var low = (danger || '').toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    for (var i = 0; i < NORM_TABLE.length; i++) {
-      var entry = NORM_TABLE[i];
-      if (entry.kw.some(function(k) { return low.indexOf(k) >= 0; })) {
-        return entry.label;
-      }
-    }
-    return danger; // Garder le libellé original si pas de correspondance
-  }
-
-  function normaliserF(v) {
-    v = parseFloat(v) || 0;
-    if (v <= 1) return 1;
-    if (v <= 2) return 2;
-    if (v <= 4) return 3;
-    return 4;
-  }
-  function normaliserG(v) { return normaliserF(v); }
-  function normaliserM(v) {
-    v = parseFloat(v) || 0.5;
-    if (v <= 0.1) return 0.25;
-    if (v <= 0.25) return 0.25;
-    if (v <= 0.5) return 0.5;
-    if (v <= 0.75) return 0.75;
-    return 1;
-  }
-
-  // ── PASSE 1 : IMPORT DIRECT de tous les risques existants ───────────
-  var log = duerp_e('duerp-import-log');
-  if (log) log.innerHTML = '<span style="color:var(--b2)">📥 Import direct des risques existants…</span>';
-
-  uts.forEach(function(ut) {
-    var bruts = ut._risquesBruts || [];
-    bruts.forEach(function(r) {
-      if (!r.danger) return;
-      // Ignorer si le danger est une valeur numérique pure (mauvais mapping colonne SheetJS)
-      var dangerStr = String(r.danger).trim();
-      if (!isNaN(parseFloat(dangerStr)) && isFinite(dangerStr)) return;
-      var risqueType = normaliserDanger(dangerStr);
-      // Si pas de famille CNRACL trouvée, essayer via la description
-      if (risqueType === dangerStr && r.desc) {
-        var rt2 = normaliserDanger(r.desc);
-        if (rt2 !== r.desc) risqueType = rt2;
-      }
-      var f = normaliserF(r.f);
-      var g = normaliserG(r.g);
-      var m = normaliserM(r.m);
-      // d valeur par défaut : 2 (exposition régulière)
-      d.risks.push({
-        id: 'rsk_' + Date.now() + '_' + Math.random().toString(36).slice(2,7),
-        utId: ut.id,
-        phase: r.desc ? r.desc.slice(0, 80) : '',
-        source: r.danger,
-        risqueType: risqueType,
-        f: f, d: 2, g: g, m: m,
-        mesures: r.mesures || '',
-        actions: r.actions || '',
-        responsable: 'CP',
-        delai: '2026',
-        echeance: '',
-        papriStatut: 'non_demarre', papriCommentaire: '', papriDateRealisation: ''
-      });
-      totalInserted++;
-    });
-    delete ut._risquesBruts;
-  });
-  duerp_save();
-  if (log) log.innerHTML = '<span style="color:var(--b2)">✨ ' + totalInserted + ' risques importés — ajout des risques transversaux manquants…</span>';
-  showToast('📥 ' + totalInserted + ' risques importés directement', 'success', 4000);
-
-  // ── PASSE 2 : IA pour ajouter uniquement les risques transversaux manquants ──
-  var BATCH = 3; // 3 UT par appel pour la passe 2 (léger : juste vérifier déplacements + incendie)
   var batches = [];
   for (var i = 0; i < uts.length; i += BATCH) batches.push(uts.slice(i, i + BATCH));
 
   for (var lotIdx = 0; lotIdx < batches.length; lotIdx++) {
     var batch = batches[lotIdx];
-    var batchCodeMap = {};
-    batch.forEach(function(ut) { batchCodeMap[String(ut.code)] = ut; });
-    var batchCodes = batch.map(function(ut) { return ut.code; }).join(', ');
+    showToast('⏳ Lot ' + (lotIdx+1) + '/' + batches.length + ' — IA en cours…', 'default', 12000);
 
-    // Construire la liste des risques déjà présents par UT
+    // Prompt enrichi avec le référentiel CNRACL/INRS par type d'UT
     var utDesc = batch.map(function(ut) {
-      var existing = d.risks.filter(function(r) { return r.utId === ut.id; });
-      var existingTypes = existing.map(function(r) { return r.risqueType; }).join(', ');
+      var ref = duerp_getRisquesRefUT(ut);
       return 'UT ' + ut.code + ' — ' + ut.nom
-        + '\n  Risques déjà présents : ' + (existingTypes || 'aucun');
+        + (ut.sous ? ' | postes : ' + ut.sous : '')
+        + (ut.effectif ? ' | ' + ut.effectif + ' agent(s)' : '')
+        + '\n  Risques CNRACL/INRS prioritaires pour ce type d\'UT :\n  - '
+        + ref.join('\n  - ');
     }).join('\n\n');
 
-    var prompt = 'Tu es Conseiller de Prévention FPT expert DUERP.\n'
-      + 'Ces UT ont déjà leurs risques importés. Vérifie uniquement si "1. Déplacements" ET "15. Incendie" sont absents et ajoute-les si manquants.\n\n'
+    var prompt = 'Tu es Conseiller de Prévention expert DUERP pour les collectivités territoriales FPT.\n'
+      + 'Le référentiel CNRACL/INRS identifie les risques prioritaires par unité de travail ci-dessous.\n\n'
       + utDesc + '\n\n'
+      + 'Génère exactement 10 risques pour CHAQUE UT. '
+      + 'OBLIGATOIRE dans chaque UT : "1. Déplacements" ET "15. Incendie" (risques transversaux FPT).\n'
       + 'Règles ABSOLUES :\n'
-      + '1. Réponds UNIQUEMENT avec un tableau JSON brut [ ] (tableau vide [] si rien à ajouter)\n'
-      + '2. Format : {"utCode":"CODE","risqueType":"N. Libellé","phase":"situation","source":"danger","f":2,"d":2,"g":3,"m":0.5,"mesures":"","actions":"","responsable":"CP","delai":"2026"}\n'
-      + '3. utCode DOIT être EXACTEMENT un de ces codes : ' + batchCodes + '\n'
-      + '4. N\'ajouter QUE les risques transversaux absents (Déplacements et/ou Incendie)';
+      + '1. Réponds UNIQUEMENT avec un tableau JSON brut, rien avant ni après\n'
+      + '2. Commence par [ et termine par ]\n'
+      + '3. Format : {"utCode":"CODE","risqueType":"N. Libellé officiel","phase":"activité ou situation","source":"danger précis","f":3,"d":2,"g":2,"m":0.5,"mesures":"prévention existante","actions":"action corrective","responsable":"CP","delai":"2026"}\n'
+      + '4. utCode = code numérique exact de l\'UT ("1", "2"...)\n'
+      + '5. f,d dans {1,2,3,4} | g dans {1,2,3,4} | m dans {0.25,0.5,0.75,1}\n'
+      + '6. Utilise les 25 familles de risques numérotées (1=Déplacements, 2=Chute, 6=Chimique, 7=Manutention, 13=Écran, 15=Incendie, 19=RPS...)\n'
+      + '7. Sources et phases spécifiques au contexte mairie/collectivité\n'
+      + '8. Actions correctives réalistes pour petites communes';
 
     try {
       var resp = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey,
           'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
-        body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 1024,
+        body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 4096,
           messages: [{ role: 'user', content: prompt }] })
       });
       var data = await resp.json();
-      if (data.stop_reason === 'max_tokens') { continue; }
-      var raw = (data.content||[]).map(function(b){ return b.text||''; }).join('').trim();
-      var s = raw.indexOf('['), e2 = raw.lastIndexOf(']');
-      if (s < 0 || e2 < 0 || e2 <= s) { continue; }
-      var risks;
-      try { risks = JSON.parse(raw.slice(s, e2+1)); } catch(pe) { continue; }
-      if (!Array.isArray(risks) || !risks.length) { continue; }
+      var raw = '';
+      (data.content || []).forEach(function(blk) { if (blk.text) raw += blk.text; });
+      raw = raw.trim();
+      console.log('[AuditIA lot ' + (lotIdx+1) + '] ' + raw.length + ' car. | début:', raw.slice(0, 120));
 
+      var s = raw.indexOf('['), e2 = raw.lastIndexOf(']');
+      if (s < 0 || e2 < 0 || e2 <= s) {
+        console.error('[AuditIA] Pas de JSON dans:', raw);
+        showToast('⚠️ Lot ' + (lotIdx+1) + ' : réponse non-JSON (console)', 'error', 6000);
+        continue;
+      }
+      var risks;
+      try { risks = JSON.parse(raw.slice(s, e2 + 1)); }
+      catch(pe) {
+        console.error('[AuditIA] JSON invalide lot ' + (lotIdx+1) + ':', pe.message);
+        showToast('⚠️ Lot ' + (lotIdx+1) + ' : JSON invalide', 'error', 5000);
+        continue;
+      }
+      if (!Array.isArray(risks) || !risks.length) {
+        showToast('⚠️ Lot ' + (lotIdx+1) + ' : tableau vide', 'error', 4000);
+        continue;
+      }
+
+      var inserted = 0;
       risks.forEach(function(r) {
         var code = String(r.utCode || '').replace(/[Uu][Tt]\s*/g, '').trim();
-        var ut = batchCodeMap[code] || d.uts.find(function(u) { return String(u.code) === code; });
-        if (!ut && batch.length > 0) {
-          var batchIdx = parseInt(code) - 1;
-          if (!isNaN(batchIdx) && batchIdx >= 0 && batchIdx < batch.length) ut = batch[batchIdx];
-        }
-        if (!ut) ut = batch[0];
-        if (!ut) return;
+        var ut = d.uts.find(function(u) { return String(u.code) === code; });
+        if (!ut) ut = batch.find(function(u) { return String(u.code) === code; });
+        if (!ut) { console.warn('[AuditIA] UT non trouvée, utCode=' + r.utCode + ' code=' + code); return; }
         d.risks.push({
           id: 'rsk_' + Date.now() + '_' + Math.random().toString(36).slice(2,7),
           utId: ut.id, phase: r.phase||'', source: r.source||'', risqueType: r.risqueType||'',
-          f: Number(r.f)||2, d: Number(r.d)||2, g: Number(r.g)||3, m: Number(r.m)||0.5,
-          mesures: r.mesures||'', actions: r.actions||'', responsable: r.responsable||'CP',
-          delai: r.delai||'2026', echeance:'',
+          f: Number(r.f)||3, d: Number(r.d)||2, g: Number(r.g)||2, m: Number(r.m)||0.5,
+          mesures: r.mesures||'', actions: r.actions||'', responsable: r.responsable||'',
+          delai: r.delai||'', echeance:'',
           papriStatut:'non_demarre', papriCommentaire:'', papriDateRealisation:''
         });
-        totalInserted++;
+        inserted++;
       });
       duerp_save();
+      totalInserted += inserted;
+      showToast('✅ Lot ' + (lotIdx+1) + ' : ' + inserted + ' risques', 'success', 3000);
     } catch(err) {
-      console.error('[AuditIA] Erreur lot transversaux ' + (lotIdx+1) + ':', err);
+      console.error('[AuditIA] Erreur réseau lot ' + (lotIdx+1) + ':', err);
+      showToast('⚠️ Lot ' + (lotIdx+1) + ' : erreur réseau', 'error', 5000);
     }
   }
-
-
-  // ── PASSE 3 : Notes de visite terrain → risques supplémentaires ─────
-  var notesVisite = (window._pendingImportIAData && window._pendingImportIAData._notesVisite) || {};
-  var notesUTs = uts.filter(function(ut, i) { return notesVisite[i] && notesVisite[i].trim(); });
-
-  if (notesUTs.length > 0 && apiKey) {
-    if (log) log.innerHTML = '<span style="color:var(--b2)">📝 Analyse des observations terrain…</span>';
-
-    for (var ni = 0; ni < notesUTs.length; ni++) {
-      var ut = notesUTs[ni];
-      var utIdx = uts.indexOf(ut);
-      var notes = notesVisite[utIdx] || '';
-      if (!notes) continue;
-
-      // Risques déjà présents pour cette UT (anti-doublons)
-      var existingForUT = d.risks.filter(function(r){ return r.utId === ut.id; });
-      var existingLabels = existingForUT.map(function(r){ return (r.risqueType||'').toLowerCase(); }).join(', ');
-
-      var prompt = 'Tu es Conseiller de Prévention FPT expert DUERP.\n'
-        + 'UT concernée : ' + ut.nom + (ut.sous ? ' | postes : ' + ut.sous : '') + '\n'
-        + 'Risques déjà enregistrés dans cette UT : ' + (existingLabels || 'aucun') + '\n\n'
-        + 'Observations terrain saisies lors de la visite :\n' + notes + '\n\n'
-        + 'Génère les risques correspondant à ces observations. Évite les doublons avec les risques déjà enregistrés.\n'
-        + 'Règles ABSOLUES :\n'
-        + '1. Réponds UNIQUEMENT avec un tableau JSON brut [ ]\n'
-        + '2. Format : {"utCode":"' + ut.code + '","risqueType":"N. Libellé","phase":"situation","source":"danger","f":2,"d":2,"g":3,"m":0.5,"mesures":"","actions":"","responsable":"CP","delai":"2026"}\n'
-        + '3. utCode = exactement "' + ut.code + '"\n'
-        + '4. Utilise les 25 familles CNRACL numérotées\n'
-        + '5. Si aucun risque nouveau à ajouter : réponds []';
-
-      try {
-        var rn = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey,
-            'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
-          body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 2048,
-            messages: [{ role: 'user', content: prompt }] })
-        });
-        var dn = await rn.json();
-        if (dn.stop_reason === 'max_tokens') continue;
-        var rawn = (dn.content||[]).map(function(b){ return b.text||''; }).join('').trim();
-        var sn2 = rawn.indexOf('['), en2 = rawn.lastIndexOf(']');
-        if (sn2 < 0 || en2 <= sn2) continue;
-        var riskn; try { riskn = JSON.parse(rawn.slice(sn2, en2+1)); } catch(e){ continue; }
-        if (!Array.isArray(riskn) || !riskn.length) continue;
-        riskn.forEach(function(r) {
-          d.risks.push({
-            id: 'rsk_' + Date.now() + '_' + Math.random().toString(36).slice(2,7),
-            utId: ut.id, phase: r.phase||'', source: r.source||'', risqueType: r.risqueType||'',
-            f: Number(r.f)||2, d: Number(r.d)||2, g: Number(r.g)||3, m: Number(r.m)||0.5,
-            mesures: r.mesures||'', actions: r.actions||'', responsable: r.responsable||'CP',
-            delai: r.delai||'2026', echeance:'',
-            papriStatut:'non_demarre', papriCommentaire:'', papriDateRealisation:''
-          });
-          totalInserted++;
-        });
-        duerp_save();
-        showToast('📝 ' + ut.nom + ' : ' + riskn.length + ' obs. terrain ajoutées', 'success', 3000);
-      } catch(e) { console.error('[AuditIA] Erreur notes visite UT ' + ut.code, e); }
-    }
-  }
-
   duerp_showTab('ut');
-  showToast('✅ Import terminé : ' + totalInserted + ' risques au total', 'success', 5000);
+  showToast('✅ ' + totalInserted + ' risques insérés au total (' + batches.length + ' lot(s))', 'success', 5000);
 }
 
 async function duerp_suggestIA() {
@@ -14776,19 +14534,13 @@ function duerp_renderImport(el) {
   '<p>.xls / .xlsx \u2014 Format DUERP 3CBO uniquement</p></div>' +
   '<input type="file" id="duerp-file-input" accept=".xls,.xlsx" style="display:none" onchange="duerp_importFile(this.files[0])"></div>' +
   '<div id="excel-sub-ia" style="display:none">' +
-  '<div id="duerp-guided-import">' +
-  '<div id="duerp-gi-step1">' +
-  '<div class="ib" style="margin-bottom:10px;background:#f3e5f5;border-color:#9c27b0;color:#6a1b9a"><strong>Assistant import guidé</strong> — L’IA analyse le fichier, importe 100% des risques, puis tu enrichis avec tes observations terrain avant confirmation.</div>' +
+  '<div class="ib" style="margin-bottom:8px;background:#f3e5f5;border-color:#9c27b0;color:#6a1b9a"><strong>Import IA</strong> \u2014 Tout format Excel (format libre de commune). L\u2019IA d\u00e9tecte les services, postes, effectifs et risques, puis g\u00e9n\u00e8re les UT et cotations CNRACL.</div>' +
   '<div class="duerp-import-zone" id="duerp-drop-zone-ia" onclick="document.getElementById(\'duerp-file-ia-input\').click()"' +
   ' ondragover="event.preventDefault();this.classList.add(\'drag\')" ondragleave="this.classList.remove(\'drag\')" ondrop="duerp_handleDropIA(event)">' +
   '<div style="font-size:2rem">&#x2728;</div>' +
-  '<strong style="font-size:.9rem;font-family:\'Raleway\',sans-serif">Étape 1 — Déposer le fichier Excel</strong>' +
-  '<p style="margin:4px 0 0">.xls / .xlsx — Tout format (format libre de commune)</p></div>' +
-  '<input type="file" id="duerp-file-ia-input" accept=".xls,.xlsx" style="display:none" onchange="duerp_importFileIA(this.files[0])">' +
-  '</div>' +
-  '<div id="duerp-gi-step2" style="display:none"></div>' +
-  '<div id="duerp-import-log" style="margin-top:8px;font-size:.8rem"></div>' +
-  '</div></div>' +
+  '<strong style="font-size:.9rem;font-family:\'Raleway\',sans-serif">Glisser-d\u00e9poser ou cliquer</strong>' +
+  '<p>.xls / .xlsx \u2014 Tout format</p></div>' +
+  '<input type="file" id="duerp-file-ia-input" accept=".xls,.xlsx" style="display:none" onchange="duerp_importFileIA(this.files[0])"></div>' +
   '<div id="import-zone-pdf" style="display:none">' +
   '<div class="ib blue" style="margin-bottom:8px">L\'IA extrait et normalise le PDF vers la structure F/D/G/M avec les 25 risques FPT.</div>' +
   '<div class="duerp-import-zone" id="duerp-drop-zone-pdf" onclick="document.getElementById(\'duerp-pdf-input\').click()"' +
@@ -14857,7 +14609,7 @@ window.duerp_importFile = function(file) {
   reader.onload = function(ev) {
     var p = window.XLSX ? Promise.resolve() : new Promise(function(res, rej) {
       var s = document.createElement('script');
-      s.src = 'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js';
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
       s.onload = res; s.onerror = rej; document.head.appendChild(s);
     });
     p.then(function() {
@@ -14920,7 +14672,7 @@ window.duerp_importFileIA = async function(file) {
     if (!window.XLSX) {
       await new Promise(function(res, rej) {
         var s = document.createElement('script');
-        s.src = 'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js';
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
         s.onload = res; s.onerror = rej; document.head.appendChild(s);
       });
     }
@@ -14939,11 +14691,8 @@ window.duerp_importFileIA = async function(file) {
   catch(e) { log.innerHTML = '<span style="color:var(--r2)">❌ Fichier non lisible : '+e.message+'</span>'; return; }
 
   // Extraire le contenu brut de toutes les feuilles
-  // ET construire un map risques_par_ut pour les fichiers à 1 onglet format libre
   var rawContent = '';
   var sheetSummaries = [];
-  var _risquesParUt = {}; // { "NomUT": [{danger, desc, f, g, m, mesures, actions}] }
-
   wb.SheetNames.forEach(function(sn) {
     try {
       var ws = wb.Sheets[sn];
@@ -14957,149 +14706,12 @@ window.duerp_importFileIA = async function(file) {
       });
       rawContent += snText + '\n';
       sheetSummaries.push(sn + ' (' + nonEmptyRows.length + ' lignes)');
-
-      // ── Détection robuste des colonnes par mots-clés dans l'en-tête ──
-      // Normaliser : minuscules, sans accents
-      function _norm(s) {
-        return String(s||'').toLowerCase()
-          .normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
-      }
-      var hdrRow = -1;
-      var colUT=-1, colDanger=-1, colDesc=-1, colF=-1, colG=-1, colM=-1, colMesures=-1, colActions=-1;
-
-      // Chercher la ligne d'en-tête dans les 5 premières lignes
-      rows.slice(0, 5).forEach(function(row, ri) {
-        if (hdrRow >= 0) return;
-        var cells = row.map(function(c){ return _norm(c); });
-        // La ligne d'en-tête doit contenir au moins "unite" ou "danger" ou "risque"
-        var isHdr = cells.some(function(c){ return c.indexOf('unite') >= 0 || c === 'danger' || (c.indexOf('danger') >= 0 && c.length < 20); });
-        if (!isHdr) return;
-        hdrRow = ri;
-        cells.forEach(function(c, ci) {
-          // UT : "unité de travail", "service", "direction", "poste"
-          if (colUT < 0 && (c.indexOf('unite') >= 0 || c.indexOf('service') === 0 || c === 'poste' || c.indexOf('direction') === 0)) colUT = ci;
-          // Danger : "danger", "risque" court (pas "risque initial")
-          if (colDanger < 0 && (c === 'danger' || c.indexOf('danger') >= 0 || (c.indexOf('risque') === 0 && c.length < 15))) colDanger = ci;
-          // Description : "description"
-          if (colDesc < 0 && c.indexOf('description') >= 0) colDesc = ci;
-          // Fréquence
-          if (colF < 0 && (c.indexOf('frequence') >= 0 || c.indexOf('freq') === 0 || c === 'f')) colF = ci;
-          // Gravité
-          if (colG < 0 && (c.indexOf('gravite') >= 0 || c.indexOf('grav') === 0 || c === 'g')) colG = ci;
-          // Maîtrise coefficient (court) vs description (long)
-          if (c.indexOf('maitrise') >= 0 || c.indexOf('mattrise') >= 0 || c.indexOf('maitri') >= 0) {
-            if (c.length < 15) { if (colM < 0) colM = ci; }
-            else { if (colMesures < 0) colMesures = ci; }
-          }
-          // Actions
-          if (colActions < 0 && (c.indexOf('action') >= 0 || c.indexOf('amelioration') >= 0 || c.indexOf('mesure') >= 0)) colActions = ci;
-        });
-      });
-
-      // Fallbacks si colonnes non détectées (format Château-Renard par défaut)
-      if (colUT < 0) colUT = 1;
-      if (colDanger < 0) colDanger = 2;
-      if (colDesc < 0) colDesc = 6;
-      if (colF < 0) colF = 8;
-      if (colG < 0) colG = 9;
-      if (colM < 0) colM = 12;
-      if (colMesures < 0) colMesures = 11;
-      if (colActions < 0) colActions = 14;
-
-      console.log('[AuditIA] Colonnes détectées — UT:'+colUT+' Danger:'+colDanger+' F:'+colF+' G:'+colG+' M:'+colM+' Mesures:'+colMesures+' Actions:'+colActions);
-
-      // Extraire les risques ligne par ligne
-      if (hdrRow >= 0) {
-        var hdrValUT = _norm((rows[hdrRow]||[])[colUT]);
-        rows.slice(hdrRow + 1).forEach(function(row) {
-          var utNom = String(row[colUT] || '').trim();
-          var danger = String(row[colDanger] || '').trim();
-          // Ignorer lignes vides, totaux, ou qui répètent l'en-tête
-          if (!utNom || !danger) return;
-          if (_norm(utNom) === hdrValUT) return;
-          if (!_risquesParUt[utNom]) _risquesParUt[utNom] = [];
-          _risquesParUt[utNom].push({
-            danger: danger,
-            desc: String(row[colDesc] || '').trim().slice(0, 200),
-            f: parseFloat(row[colF]) || 0,
-            g: parseFloat(row[colG]) || 0,
-            m: parseFloat(row[colM]) || 0,
-            mesures: String(row[colMesures] || '').trim().slice(0, 200),
-            actions: String(row[colActions] || '').trim().slice(0, 200)
-          });
-        });
-      }
-      console.log('[AuditIA] Risques extraits par UT:', Object.keys(_risquesParUt).map(function(k){ return k+':'+_risquesParUt[k].length; }).join(', '));
-
-      // ── FORMAT 2 : 1 onglet par UT (ex: Douchy — onglets "1.Adm", "2.Poste"...) ──
-      // Déclenché si ≥2 onglets commencent par un chiffre, PRIORITAIRE sur format 1
-      var utSheets = wb.SheetNames.filter(function(sn) { return /^\d/.test(sn.trim()); });
-      if (utSheets.length >= 2) {
-        _risquesParUt = {}; // Reset — format 2 gère tout
-        console.log('[AuditIA] Format multi-onglets (1 UT/onglet) :', utSheets.length, 'onglets');
-        utSheets.forEach(function(sn, utIdx) {
-          try {
-            var wsUT = wb.Sheets[sn];
-            var rowsUT = XLSX.utils.sheet_to_json(wsUT, { header: 1, defval: '' });
-            if (!rowsUT.length) return;
-
-            // Nom UT : ligne 1 col 2
-            var utNom = String((rowsUT[0]||[])[2]||'').trim() || sn;
-
-            // Trouver la ligne d'en-tête (contient "Fréquence" ou "Gravité")
-            var hdrIdx = -1, cDanger=0, cDesc=2, cF=4, cG=5, cM=8, cMesures=7, cActions=10;
-            rowsUT.slice(0, 8).forEach(function(row, ri) {
-              if (hdrIdx >= 0) return;
-              var cells = row.map(function(c){ return _norm(c); });
-              if (cells.some(function(c){ return c.indexOf('frequence') >= 0 || c.indexOf('gravite') >= 0; })) {
-                hdrIdx = ri;
-                cells.forEach(function(c, ci) {
-                  if (c.indexOf('frequence') >= 0) cF = ci;
-                  if (c.indexOf('gravite') >= 0) cG = ci;
-                  if (c.indexOf('maitrise') >= 0 && c.length < 12) cM = ci;
-                  if (c.indexOf('maitrise') >= 0 && c.length >= 12) cMesures = ci;
-                  if (c.indexOf('action') >= 0 || c.indexOf('amelioration') >= 0) cActions = ci;
-                  if (c.indexOf('description') >= 0) cDesc = ci;
-                });
-                // Dans ce format : col 0 = DANGER (pas col UT — c'est 1 onglet = 1 UT)
-                cDanger = 0;
-              }
-            });
-
-            if (!_risquesParUt[utNom]) _risquesParUt[utNom] = [];
-            var idxKey = '_idx_' + utIdx;
-            if (!_risquesParUt[idxKey]) _risquesParUt[idxKey] = [];
-
-            var startRow = hdrIdx >= 0 ? hdrIdx + 1 : 4;
-            rowsUT.slice(startRow).forEach(function(row) {
-              var danger = String(row[cDanger]||'').split('\n')[0].trim().slice(0, 80);
-              if (!danger || danger === 'Dangers potentiels') return;
-              var f = parseFloat(row[cF]) || 0;
-              var g = parseFloat(row[cG]) || 0;
-              if (!f && !g) return; // non applicable pour cette UT
-              var risque = {
-                danger: danger,
-                desc: String(row[cDesc]||'').trim().slice(0, 200),
-                f: f, g: g,
-                m: parseFloat(row[cM]) || 0,
-                mesures: String(row[cMesures]||'').trim().slice(0, 200),
-                actions: String(row[cActions]||'').trim().slice(0, 200)
-              };
-              _risquesParUt[utNom].push(risque);
-              _risquesParUt[idxKey].push(risque);
-            });
-            console.log('[AuditIA] UT', utNom, '(idx='+utIdx+') :', _risquesParUt[utNom].length, 'risques');
-          } catch(e) { console.error('[AuditIA] Erreur onglet', sn, e); }
-        });
-        console.log('[AuditIA] Total format 2:', Object.keys(_risquesParUt).filter(function(k){return !k.startsWith('_idx_');}).reduce(function(s,k){return s+_risquesParUt[k].length;},0), 'risques');
-      }
     } catch(e) {}
   });
 
   if (!rawContent.trim()) { log.innerHTML = '<span style="color:var(--r2)">❌ Fichier vide ou illisible.</span>'; return; }
   if (rawContent.length > 28000) rawContent = rawContent.slice(0, 28000) + '\n[… contenu tronqué]';
 
-  window._xlsxRisquesParUt = _risquesParUt; // Stocker pour duerp_showImportIAPreview
   log.innerHTML = '<span style="color:var(--b2)">✨ Analyse IA en cours… (' + sheetSummaries.join(', ') + ')</span>';
 
   // Appel IA — extraction de la structure
@@ -15144,116 +14756,62 @@ window.duerp_importFileIA = async function(file) {
 };
 
 function duerp_showImportIAPreview(data) {
-  var step2 = duerp_e('duerp-gi-step2');
-  var step1 = duerp_e('duerp-gi-step1');
-  if (!step2) return;
+  var prev = duerp_e('duerp-import-preview');
+  if (!prev) return;
 
-  // Attacher les risques bruts extraits
-  data._risquesParUt = window._xlsxRisquesParUt || {};
-  window._xlsxRisquesParUt = null;
-  window._pendingImportIAData = data;
-
-  // Compter les risques existants dans le DUERP (pour détection doublons)
-  var d = duerp_getCD(duerp_convId);
-  var existingRisks = d ? (d.risks||[]) : [];
-  var existingTypes = existingRisks.map(function(r){ return (r.risqueType||'').toLowerCase(); });
-
-  // Construire les risques bruts à importer depuis _risquesParUt
-  var rpu = data._risquesParUt || {};
-  var totalBruts = Object.keys(rpu).filter(function(k){ return !k.startsWith('_idx_'); })
-    .reduce(function(s,k){ return s + rpu[k].length; }, 0);
-
-  // Par UT : compter risques, détecter doublons potentiels
   var utRows = (data.uts||[]).map(function(ut, i) {
-    // Matching risques bruts
-    var bruts = rpu[ut.nom] || rpu['_idx_'+i] || [];
-    // Détecter doublons : risque du fichier déjà présent dans DUERP
-    var doublons = 0;
-    bruts.forEach(function(r) {
-      var label = (r.danger||'').toLowerCase();
-      if (existingTypes.some(function(t){ return t.indexOf(label.slice(0,8)) >= 0 || label.indexOf(t.slice(0,8)) >= 0; })) doublons++;
-    });
-    var doubBadge = doublons > 0
-      ? '<span style="background:#fff3e0;color:#e65100;border-radius:4px;padding:1px 5px;font-size:.7rem;margin-left:4px">⚠️ '+doublons+' doublon'+(doublons>1?'s':'')+'</span>'
-      : '';
     return '<tr style="font-size:.8rem">'
-      + '<td style="padding:5px 8px;border-bottom:1px solid var(--n2);font-weight:600">' + esc(ut.nom||'—') + '</td>'
-      + '<td style="padding:5px 8px;border-bottom:1px solid var(--n2);color:var(--n1)">' + esc(ut.postes||'—') + '</td>'
-      + '<td style="padding:5px 8px;border-bottom:1px solid var(--n2);text-align:center">' + (ut.effectif||'?') + '</td>'
-      + '<td style="padding:5px 8px;border-bottom:1px solid var(--n2);text-align:center">'
-        + '<span style="background:#e8f5e9;color:#2e7d32;border-radius:4px;padding:1px 6px;font-size:.75rem">'
-        + bruts.length + ' risque' + (bruts.length>1?'s':'') + '</span>' + doubBadge + '</td>'
+      + '<td style="padding:4px 8px;border-bottom:1px solid var(--n2)">' + esc(ut.nom||'—') + '</td>'
+      + '<td style="padding:4px 8px;border-bottom:1px solid var(--n2);color:var(--n1)">' + esc(ut.postes||'—') + '</td>'
+      + '<td style="padding:4px 8px;border-bottom:1px solid var(--n2);text-align:center">' + (ut.effectif||'?') + '</td>'
+      + '<td style="padding:4px 8px;border-bottom:1px solid var(--n2);color:var(--n1)">' + esc(ut.lieu||'—') + '</td>'
       + '</tr>';
   }).join('');
 
-  // Zone notes de visite par UT
-  var notesRows = (data.uts||[]).map(function(ut, i) {
-    return '<div style="margin-bottom:10px">'
-      + '<label style="font-size:.78rem;font-weight:700;color:#6a1b9a;display:block;margin-bottom:3px">🏢 ' + esc(ut.nom||'UT '+(i+1)) + '</label>'
-      + '<textarea id="gi-notes-'+i+'" placeholder="Ex: escalier sans rampe, produits chimiques non étiquetés, EPI manquants… (laisser vide si rien à ajouter)" '
-      + 'style="width:100%;box-sizing:border-box;min-height:52px;font-size:.78rem;border:1px solid #ce93d8;border-radius:6px;padding:6px 8px;resize:vertical;font-family:inherit"></textarea>'
-      + '</div>';
-  }).join('');
+  var risquesMentionnes = (data.risques_mentionnes||[]);
+  var risquesHtml = risquesMentionnes.length
+    ? '<div style="margin-top:8px;font-size:.78rem;color:var(--n1)">Risques mentionnés dans le fichier : '
+      + risquesMentionnes.map(function(r){return '<span style="background:#fff3e0;border-radius:4px;padding:1px 6px;margin:1px;display:inline-block">'+esc(r)+'</span>';}).join(' ') + '</div>'
+    : '';
 
-  if (step1) step1.style.display = 'none';
-  step2.style.display = 'block';
-  step2.innerHTML = '<div style="background:#f3e5f5;border:1.5px solid #9c27b0;border-radius:12px;padding:16px">'
-    // En-tête
-    + '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">'
-    + '<span style="font-size:1.3rem">✨</span>'
-    + '<div><div style="font-family:\'Raleway\',sans-serif;font-weight:800;font-size:.92rem;color:#6a1b9a">Étape 2 — Vérification & observations terrain</div>'
-    + '<div style="font-size:.75rem;color:#888">'+(data.commune?esc(data.commune)+' — ':'')+esc(data.annee||'')+'</div></div></div>'
-    // Résumé
-    + '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">'
-    + '<span style="background:#e8f5e9;color:#2e7d32;border-radius:6px;padding:3px 10px;font-size:.78rem;font-weight:700">📁 '+(data.uts||[]).length+' UT détectées</span>'
-    + '<span style="background:#e3f2fd;color:#1565c0;border-radius:6px;padding:3px 10px;font-size:.78rem;font-weight:700">📊 '+totalBruts+' risques à importer</span>'
-    + (existingRisks.length ? '<span style="background:#fff3e0;color:#e65100;border-radius:6px;padding:3px 10px;font-size:.78rem;font-weight:700">⚠️ '+existingRisks.length+' risques déjà dans le DUERP</span>' : '')
+  window._pendingImportIAData = data;
+  prev.style.display = 'block';
+  prev.innerHTML = '<div style="background:#f3e5f5;border:1.5px solid #9c27b0;border-radius:12px;padding:16px">'
+    + '<div style="font-family:\'Raleway\',sans-serif;font-weight:800;font-size:.9rem;color:#6a1b9a;margin-bottom:10px">✨ Détection IA'
+    + (data.commune ? ' — ' + esc(data.commune) : '')
+    + (data.annee ? ' (' + esc(data.annee) + ')' : '') + '</div>'
+    + '<div style="font-size:.8rem;color:#555;margin-bottom:10px">'
+    + '<b>' + (data.uts||[]).length + '</b> unité(s) de travail détectée(s) — '
+    + '<b>' + (data.uts||[]).reduce(function(s,u){return s+(u.effectif||0);},0) + '</b> agent(s) au total'
     + '</div>'
-    // Tableau UT
-    + '<div style="overflow-x:auto;margin-bottom:14px">'
-    + '<table style="width:100%;border-collapse:collapse">'
+    + '<div style="overflow-x:auto;margin-bottom:10px">'
+    + '<table style="width:100%;border-collapse:collapse;font-size:.8rem">'
     + '<thead><tr style="background:#e1bee7">'
-    + '<th style="padding:5px 8px;text-align:left;font-size:.72rem">Unité de travail</th>'
+    + '<th style="padding:5px 8px;text-align:left;font-size:.72rem">Service / Direction</th>'
     + '<th style="padding:5px 8px;text-align:left;font-size:.72rem">Postes</th>'
     + '<th style="padding:5px 8px;text-align:center;font-size:.72rem">Eff.</th>'
-    + '<th style="padding:5px 8px;text-align:center;font-size:.72rem">Risques fichier</th>'
+    + '<th style="padding:5px 8px;text-align:left;font-size:.72rem">Lieu</th>'
     + '</tr></thead><tbody>' + utRows + '</tbody></table></div>'
-    // Notes de visite
-    + '<div style="background:#fff;border:1px solid #ce93d8;border-radius:8px;padding:12px;margin-bottom:14px">'
-    + '<div style="font-size:.8rem;font-weight:700;color:#6a1b9a;margin-bottom:8px">📝 Étape 2b — Observations terrain à ajouter <span style="font-weight:400;color:#999">(optionnel)</span></div>'
-    + '<div style="font-size:.75rem;color:#888;margin-bottom:10px">Les problèmes saisis seront analysés par l\'IA et ajoutés comme risques supplémentaires. Les doublons avec le fichier Excel seront évités.</div>'
-    + notesRows
-    + '</div>'
-    // Boutons
-    + '<div style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap">'
-    + '<button class="btn btn-s btn-sm" onclick="duerp_cancelImportIA()">✖ Annuler</button>'
-    + '<button class="btn btn-p" onclick="duerp_confirmImportIA()" style="background:#7b1fa2;border-color:#7b1fa2">✅ Importer ('+totalBruts+' risques + observations)</button>'
+    + risquesHtml
+    + '<div style="display:flex;gap:10px;margin-top:14px;justify-content:flex-end">'
+    + '<button class="btn btn-s btn-sm" onclick="duerp_cancelImportIA()">Annuler</button>'
+    + '<button class="btn btn-p" onclick="duerp_confirmImportIA()">✅ Créer les UT et générer les risques IA</button>'
     + '</div></div>';
 }
 
 window.duerp_cancelImportIA = function() {
   window._pendingImportIAData = null;
-  var step2 = duerp_e('duerp-gi-step2');
-  var step1 = duerp_e('duerp-gi-step1');
-  if (step2) { step2.style.display='none'; step2.innerHTML=''; }
-  if (step1) step1.style.display='block';
+  var prev = duerp_e('duerp-import-preview');
+  if (prev) { prev.style.display='none'; prev.innerHTML=''; }
   var inp = duerp_e('duerp-file-ia-input'); if (inp) inp.value='';
-  var log = duerp_e('duerp-import-log'); if (log) log.innerHTML='';
 };
 
 window.duerp_confirmImportIA = async function() {
   var data = window._pendingImportIAData;
   if (!data) { showToast('Données manquantes — relancez l\'analyse', 'error'); return; }
 
-  // Collecter les notes de visite saisies par UT
-  data._notesVisite = {};
-  (data.uts||[]).forEach(function(ut, i) {
-    var ta = document.getElementById('gi-notes-'+i);
-    if (ta && ta.value.trim()) data._notesVisite[i] = ta.value.trim();
-  });
-
-  var step2 = duerp_e('duerp-gi-step2');
-  if (step2) { step2.style.display='none'; step2.innerHTML=''; }
+  var prev = duerp_e('duerp-import-preview');
+  if (prev) { prev.style.display='none'; prev.innerHTML=''; }
   var log = duerp_e('duerp-import-log');
   if (log) log.innerHTML = '<span style="color:var(--b2)">⏳ Création des UT en cours…</span>';
 
@@ -15269,31 +14827,7 @@ window.duerp_confirmImportIA = async function() {
       nom: ut.nom || ('UT ' + code),
       sous: ut.postes || '',
       lieu: ut.lieu || '',
-      effectif: parseInt(ut.effectif) || 0,
-      // Risques bruts du fichier source — matching multi-stratégie
-      _risquesBruts: (function() {
-        if (!data._risquesParUt) return [];
-        var rpu = data._risquesParUt;
-        // 1. Matching exact par nom
-        if (rpu[ut.nom]) return rpu[ut.nom];
-        // 2. Matching insensible à la casse
-        var nomLow = (ut.nom||'').toLowerCase().trim();
-        var key = Object.keys(rpu).find(function(k) {
-          return !k.startsWith('_idx_') && k.toLowerCase().trim() === nomLow;
-        });
-        if (key) return rpu[key];
-        // 3. Matching partiel
-        key = Object.keys(rpu).find(function(k) {
-          if (k.startsWith('_idx_')) return false;
-          var kl = k.toLowerCase();
-          return kl.indexOf(nomLow) >= 0 || nomLow.indexOf(kl) >= 0;
-        });
-        if (key) return rpu[key];
-        // 4. Fallback par position de création dans le lot (index i)
-        var idxKey = '_idx_' + i;
-        if (rpu[idxKey]) { console.log('[AuditIA] Fallback position idx='+i+' pour UT: '+ut.nom); return rpu[idxKey]; }
-        return [];
-      })()
+      effectif: parseInt(ut.effectif) || 0
     };
     d.uts.push(newUT);
     createdUTs.push(newUT);
@@ -15386,8 +14920,8 @@ window.duerp_importPDF = function(file) {
   reader.onload = function(ev) {
     var loadPDF = window.pdfjsLib ? Promise.resolve() : new Promise(function(res,rej){
       var s = document.createElement('script');
-      s.src = 'https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js';
-      s.onload = function(){ window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js'; res(); };
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+      s.onload = function(){ window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'; res(); };
       s.onerror = rej; document.head.appendChild(s);
     });
     loadPDF.then(function(){
@@ -15704,9 +15238,7 @@ window.duerp_exportJSON = function() {
   var ville = cv ? (cv.commune || 'Convention').replace(/\s+/g, '') : 'Convention';
   var blob = new Blob([JSON.stringify({ convention: cv, duerp: duerp_getCD(duerp_convId), exportedAt: new Date().toISOString() }, null, 2)], { type: 'application/json' });
   var a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-  a.download = 'DUERP_' + ville + '_' + new Date().getFullYear() + '.json';
-  document.body.appendChild(a); a.click();
-  setTimeout(function() { document.body.removeChild(a); URL.revokeObjectURL(a.href); }, 2000);
+  a.download = 'DUERP_' + ville + '_' + new Date().getFullYear() + '.json'; a.click();
   showToast('DUERP exporté en JSON', 'success');
 };
 
@@ -16256,7 +15788,7 @@ window.duerp_showHistorique = function(riskId) {
     });
     h += '</div>';
   }
-  document.getElementById('m-duerp-hist-content').innerHTML = h;
+  document.getElementById('m-duerp-hist').querySelector('.modal').innerHTML = h;
   om('m-duerp-hist');
 };
 
@@ -16308,11 +15840,11 @@ window.duerp_exportDocx = async function() {
   // Load docx library
   if (!window.docx) {
     if (window.loadLibCached) {
-      await window.loadLibCached('cache-docx', 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs');
+      await window.loadLibCached('cache-docx', 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js');
     } else {
       await new Promise(function(res, rej) {
         var s = document.createElement('script');
-        s.src = 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs';
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js';
         s.onload = res;
         s.onerror = function() { rej(new Error('CDN indisponible')); };
         document.head.appendChild(s);
@@ -16403,9 +15935,7 @@ window.duerp_exportDocx = async function() {
   var blob = await D.Packer.toBlob(doc);
   var ville = commune.replace(/\s+/g, '');
   var a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-  a.download = 'DUERP_' + ville + '_' + yr + '.docx';
-  document.body.appendChild(a); a.click();
-  setTimeout(function() { document.body.removeChild(a); URL.revokeObjectURL(a.href); }, 2000);
+  a.download = 'DUERP_' + ville + '_' + yr + '.docx'; a.click();
   URL.revokeObjectURL(a.href);
   showToast('Export Word généré ✅', 'success');
   log('');
@@ -16573,8 +16103,8 @@ window.duerp_renderUT = function(el) {
 // ── 4. MODE HORS-LIGNE — CACHE DES LIBS EXTERNES ──
 (function() {
   var libsToCache = [
-    { id: 'cache-xlsx', src: 'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js', key: 'auditia_cache_xlsx' },
-    { id: 'cache-docx', src: 'https://unpkg.com/docx@9.7.0/dist/index.umd.cjs', key: 'auditia_cache_docx' }
+    { id: 'cache-xlsx', src: 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js', key: 'auditia_cache_xlsx' },
+    { id: 'cache-docx', src: 'https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.umd.min.js', key: 'auditia_cache_docx' }
   ];
   // Pre-fetch libs and cache in IndexedDB when online
   function cacheLib(lib) {
@@ -18879,7 +18409,7 @@ window.exportAgentsExcel = function() {
   // Export XLSX via SheetJS
   const loadXLSX = window.XLSX ? Promise.resolve() : new Promise((res, rej) => {
     const s = document.createElement('script');
-    s.src = 'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js';
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
     s.onload = res; s.onerror = rej; document.head.appendChild(s);
   });
   loadXLSX.then(() => {
